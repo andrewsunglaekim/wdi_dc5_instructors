@@ -75,7 +75,7 @@ def some_method
 end
 some_method
 # notice what the hash rocket is pointing to
- 
+
 ```
   - fist to five
   	- who is confident they can differentiate between return values(output) and side effects
@@ -111,6 +111,10 @@ HAMco keeps up with the trends, and we know that 'retro' is the latest fad among
 *super bonus*
 
 - start making a personal assistant commandline app that has the temperature converter as an option in its interface
+
+## Closing
+- Summarize learning objectives
+- Prod students about what they think about what arrays and hashes are.
 
 #### References
 [http://ruby-doc.org//core-2.2.0/String.html](http://ruby-doc.org//core-2.2.0/String.html)
