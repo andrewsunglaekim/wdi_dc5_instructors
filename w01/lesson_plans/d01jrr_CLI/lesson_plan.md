@@ -46,19 +46,19 @@ At each step, ask students what they see and what's happening.
 
 ---
 
-###	This is called the "command line", also "shell", also "bash".
-
--	The command line / shell / bash is a way of interacting with your computer without using a fancy graphical interface
-
----
-
 ###	Following the steps on the board, do the same stuff WITHOUT the Command Line.
 
 1.	Open your Home folder
 
-2.	Create a new text file called ".hello"
+2.	Create a new text file called "hello.txt"
 
 3.	Open it and write "Hi there!"
+
+---
+
+###	This is called the "command line", also "shell", also "bash".
+
+-	The command line / shell / bash is a way of interacting with your computer without using a fancy graphical interface
 
 ---
 
@@ -110,11 +110,66 @@ At each step, ask students what they see and what's happening.
 
 -	`say -v ?`
 
-###	Paths
+---
+
+###	Namespaces and double-dashes
+
+-	`brew install tree`
+
+-	`ruby --version`
 
 ---
 
-##	Scaffolding
+###	Manuals
+
+-	`man`
+
+---
+
+###	Paths Intro
+
+1.	`cd ~`
+
+-	`ls`
+
+-	`cd Desktop`
+
+-	`cd ..`
+
+-	`cd .`
+
+-	`cd` Drag and drop
+
+-	`cd ~`
+
+
+-	Other funky punctuation: `$`
+
+---
+
+##	Navigation exercise
+
+###	bit.ly/1EO1SRl
+
+---
+
+###	Absolute vs relative
+
+-	Absolute begins with `/`, relative begins with `.`
+
+---
+
+##	Keyboard shortcuts
+
+-	Ctrl + C
+
+	-	If it just sits there, try writing something after it.
+
+-	Ctrl + K
+
+---
+
+##	Commands exercise
 
 ###	13m) You do: Pair up, assign groups, and figure out what each command does.
 
@@ -126,19 +181,13 @@ Play with the commands and figure out:
 
 -	For what (if anything) is the command's name an abbreviation?
 
-Prep:
-
-	Open "Home" folder
-
-	Describe `man`
-
 -	What happens if you write something after the command?
 
 |A|B|C|D|
 |-|-|-|-|
 |`touch`	|`cat`		|`pwd`		|`history`	|
-|`mkdir`	|`head`		|`cd`		|`man`		|
-|`ls -a`	|`tail`		|`open . ..`|`!!`		|
+|`mkdir`	|`head`		|`tree`		|`cal`		|
+|`ls -a`	|`tail`		|`open`		|`!!`		|
 
 ### Move back to seats
 
@@ -155,6 +204,8 @@ Prep:
 	-	`.` and `..`
 
 	-	`cd` : What is a directory?
+
+---
 
 ###	10m) We do: The dangerous commands
 
@@ -215,24 +266,4 @@ Prep:
 
 #	Closing
 
-###	Things I forgot:
-
--	Absolute paths start with a slash. Relative paths start with a `.` or name.
-
-- 	Make actual DMV directory so they can play with it
-
--	Don't talk about URLs re: paths. Confuses things.
-
--	`brew install tree`
-
--	Tell them what you're going to do
-
 -	Don't summarize for them in closing. Ask them to define for me. Closing should be an assessment (of sorts)
-
--	Introduce `-` and `--`
-
--	Namespaces, like `brew`
-
--	Introduce `man` first
-
--	`mv` and `cp`
