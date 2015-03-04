@@ -12,15 +12,17 @@
 
 -	Describe the difference between an absolute and a relative path
 
--	Create a working directory for a new project
+-	Understand the capability of the CLI and what *not* to do
+
+-	Describe what a file or folder's permissions are
 
 ---
 
-##	Opening
+##	Framing
 
 At each step, ask students what they see and what's happening.
 
-###	5m)	We do:
+###	We do:
 
 1.	Have students open their computers, and open Terminal
 
@@ -28,25 +30,29 @@ At each step, ask students what they see and what's happening.
 
 -	Type `ls`
 
-	-	Where are we?
+	-	What do you see?
 
 -	Type `echo 'Hi there!' > hello.txt`, then `ls`
 
 	-	What happened?
 
--	Type `open hello.txt -a TextEdit`
+-	Type `open hello.txt -e`
 
 	-	What happened?
 
-###	What's going on?
+---
+
+###	Write the steps of what we just did on the board.
+
+---
+
+###	This is called the "command line", also "shell", also "bash".
 
 -	The command line / shell / bash is a way of interacting with your computer without using a fancy graphical interface
 
--	Let's try doing the same stuff without the Command Line
+---
 
-###	1m)	You do:
-
-Within the Finder...
+###	Following the steps on the board, do the same stuff WITHOUT the Command Line.
 
 1.	Open your Home folder
 
@@ -54,33 +60,15 @@ Within the Finder...
 
 3.	Open it and write "Hi there!"
 
-###	What's going on?
+---
 
--	Which way was easier?
+###	Which way was easier?
 
 -	Why would programmers so often work in the command line?
 
-###	10m) You do: Pair up, assign groups, and figure out what each command does
+---
 
-Each column is related commands.
-
-Play with the commands and figure out:
-
--	How would you describe what the command does?
-
--	For what (if anything) is the command's name an abbreviation?
-
-Consider:
-
--	What happens if you write something after the command?
-
-|A|B|C|D|
-|-|-|-|-|
-|`touch`	|`cat`		|`pwd`		|`history`	|
-|`mkdir`	|`head`		|`cd`		|`man`		|
-|`ls -a`	|`tail`		|`open . ..`|`!!`		|
-
-### 10m) I do:
+###	Brief history of Command Line
 
 -	The command line is an interface to your operating system's services.
 
@@ -94,17 +82,19 @@ Consider:
 
 	-	Might look familiar to old folks using old computers: no mouse
 
--	Anatomy of a command
+---
 
-	-	Command
+###	Anatomy of a command
 
-	-	Flag
+-	Command
 
-		-	The command's options
+-	Flag
 
-	-	Argument
+	-	The command's options
 
-		-	The input that's being processed by the command
+-	Argument
+
+	-	The input that's being processed by the command
 
 -	Example
 
@@ -116,14 +106,133 @@ Consider:
 
 		-	`haircut -mohawk Robin`
 
--	How are these different?
+-	`say -v 'Hello'`
 
-	-	`haircut -mohawk Robin`
+-	`say -v ?`
 
-	-	`haircut -Robin	mohawk`
+###	Paths
 
-	-	Technically they do the same thing. *Semantically* they mean something different.
+---
 
-		-	The first implies there are specific haircuts from which you can choose, but you can give that haircut to anyone.
+##	Scaffolding
 
-		-	The second implies there are specific people to whom you can give haircuts, but you can give them any haircut you want
+###	13m) You do: Pair up, assign groups, and figure out what each command does.
+
+Each column is related commands.
+
+Play with the commands and figure out:
+
+-	How would you describe what the command does?
+
+-	For what (if anything) is the command's name an abbreviation?
+
+Prep:
+
+	Open "Home" folder
+
+	Describe `man`
+
+-	What happens if you write something after the command?
+
+|A|B|C|D|
+|-|-|-|-|
+|`touch`	|`cat`		|`pwd`		|`history`	|
+|`mkdir`	|`head`		|`cd`		|`man`		|
+|`ls -a`	|`tail`		|`open . ..`|`!!`		|
+
+### Move back to seats
+
+###	10m) Review: What did you learn?
+
+-	Randomly call on students and ask name and meaning
+
+-	Points to cover
+
+	-	Commands are usually acronyms hinting at what they do
+
+	-	Can always use man to get help
+
+	-	`.` and `..`
+
+	-	`cd` : What is a directory?
+
+###	10m) We do: The dangerous commands
+
+####	rm
+
+	touch hello.txt
+	rm hello.txt
+
+-	What does `rm` stand for?
+
+-	Why is this "dangerous"?
+
+
+	mkdir DeathStar
+	rm DeathStar
+
+-	Why didn't it work?
+
+
+	rm -d DeathStar
+
+-	What does `-d` stand for?
+
+
+	mkdir DeathStar
+	touch DeathStar/vader.txt
+	rm -d DeathStar
+
+-	Why didn't it work?
+
+
+	rm -r DeathStar
+
+-	What does `-r` stand for?
+
+	-	Recursion
+
+-	Safety check against deleting stuff you don't mean to delete.
+
+-	Be **super careful** with `rm -r`.
+
+####	sudo
+
+1.	Make a new folder called "ImportantStuff"
+
+2.	Get Info, click lock, and change permissions to "Read Only"
+
+3.	**Without writing anything after,** type `rm -r ImportantStuff`
+
+
+-	What happened?
+
+-	Write `sudo rm -r ImportantStuff`
+
+	-	What happened?
+
+---
+
+#	Closing
+
+###	Things I forgot:
+
+-	Absolute paths start with a slash. Relative paths start with a `.` or name.
+
+- 	Make actual DMV directory so they can play with it
+
+-	Don't talk about URLs re: paths. Confuses things.
+
+-	`brew install tree`
+
+-	Tell them what you're going to do
+
+-	Don't summarize for them in closing. Ask them to define for me. Closing should be an assessment (of sorts)
+
+-	Introduce `-` and `--`
+
+-	Namespaces, like `brew`
+
+-	Introduce `man` first
+
+-	`mv` and `cp`
