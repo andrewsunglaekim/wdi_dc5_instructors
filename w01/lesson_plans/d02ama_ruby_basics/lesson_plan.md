@@ -117,8 +117,8 @@ HAMco keeps up with the trends, and we know that 'retro' is the latest fad among
 - Prod students about what they think about what arrays and hashes are.
 
 #### References
-[http://ruby-doc.org//core-2.2.0/String.html](http://ruby-doc.org//core-2.2.0/String.html)
-[http://ruby-doc.org//core-2.2.0/Fixnum.html](http://ruby-doc.org//core-2.2.0/Fixnum.html)
+[http://ruby-doc.org//core-2.2.0/String.html](http://ruby-doc.org//core-2.2.0/String.html)<br>
+[http://ruby-doc.org//core-2.2.0/Fixnum.html](http://ruby-doc.org//core-2.2.0/Fixnum.html)<br>
 [Chris Pine's Book](https://pine.fm/LearnToProgram/)
 
 
