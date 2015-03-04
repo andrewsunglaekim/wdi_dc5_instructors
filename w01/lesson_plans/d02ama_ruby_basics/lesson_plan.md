@@ -25,11 +25,14 @@ Establish a foundation of the ruby language. It'll be the premise that is used t
 ### Opening Framing & Hook
 
 Prior Knowledge Inventory(5m)
-	-	list uses of computer programming
-		- probe about data types
-	- what things are made more effective through programming
+
+- turn and talk(3m)
+	- *Talk to your neighbor about some of the uses of computer programming you see in the wild* 
+-	list uses of computer programming
+	- probe about data types
+- what things are made more effective through programming
 Metaphor of PB&J making robot(5m)
-	- computer programming allows us to do simple tasks efficiently
+- computer programming allows us to do simple tasks efficiently
 Bringing us back to ruby basics. To learn the building blocks of your first computer programming language.
 
 ## I do
@@ -67,8 +70,16 @@ string = "hi i'm a string"
 boolean = true
 symbol = :bob
 pi.class
-boolean.class 
+boolean.class
+def some_method
+	puts "some string"
+end
+some_method
+# notice what the hash rocket is pointing to
+
 ```
+  - fist to five
+  	- who is confident they can differentiate between return values(output) and side effects
 
 - Instruct students to experiment with pry and random methods they've come across.
 	- direct them to ruby strings docs for materials to use
@@ -102,9 +113,13 @@ HAMco keeps up with the trends, and we know that 'retro' is the latest fad among
 
 - start making a personal assistant commandline app that has the temperature converter as an option in its interface
 
+## Closing
+- Summarize learning objectives
+- Prod students about what they think about what arrays and hashes are.
+
 #### References
-[http://ruby-doc.org//core-2.2.0/String.html](http://ruby-doc.org//core-2.2.0/String.html)
-[http://ruby-doc.org//core-2.2.0/Fixnum.html](http://ruby-doc.org//core-2.2.0/Fixnum.html)
+[http://ruby-doc.org//core-2.2.0/String.html](http://ruby-doc.org//core-2.2.0/String.html)<br>
+[http://ruby-doc.org//core-2.2.0/Fixnum.html](http://ruby-doc.org//core-2.2.0/Fixnum.html)<br>
 [Chris Pine's Book](https://pine.fm/LearnToProgram/)
 
 
