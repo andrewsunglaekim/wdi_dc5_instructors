@@ -1,4 +1,4 @@
-Make a temperature converter(30m)
+## Make a temperature converter(30m)
 
 HAMco keeps up with the trends, and we know that 'retro' is the latest fad among today's youth. HAMco needs a CLI based temperature converter!
 
