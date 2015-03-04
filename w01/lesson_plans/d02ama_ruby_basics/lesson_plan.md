@@ -25,13 +25,14 @@ Establish a foundation of the ruby language. It'll be the premise that is used t
 ### Opening Framing & Hook
 
 Prior Knowledge Inventory(5m)
-	- turn and talk(3m)
-		- *Talk to your neighbor about some of the uses of computer programming you see in the wild* 
-	-	list uses of computer programming
-		- probe about data types
-	- what things are made more effective through programming
+
+- turn and talk(3m)
+	- *Talk to your neighbor about some of the uses of computer programming you see in the wild* 
+-	list uses of computer programming
+	- probe about data types
+- what things are made more effective through programming
 Metaphor of PB&J making robot(5m)
-	- computer programming allows us to do simple tasks efficiently
+- computer programming allows us to do simple tasks efficiently
 Bringing us back to ruby basics. To learn the building blocks of your first computer programming language.
 
 ## I do
