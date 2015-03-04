@@ -25,6 +25,8 @@ Establish a foundation of the ruby language. It'll be the premise that is used t
 ### Opening Framing & Hook
 
 Prior Knowledge Inventory(5m)
+	- turn and talk(3m)
+		- *Talk to your neighbor about some of the uses of computer programming you see in the wild* 
 	-	list uses of computer programming
 		- probe about data types
 	- what things are made more effective through programming
@@ -67,8 +69,16 @@ string = "hi i'm a string"
 boolean = true
 symbol = :bob
 pi.class
-boolean.class 
+boolean.class
+def some_method
+	puts "some string"
+end
+some_method
+# notice what the hash rocket is pointing to
+ 
 ```
+  - fist to five
+  	- who is confident they can differentiate between return values(output) and side effects
 
 - Instruct students to experiment with pry and random methods they've come across.
 	- direct them to ruby strings docs for materials to use
