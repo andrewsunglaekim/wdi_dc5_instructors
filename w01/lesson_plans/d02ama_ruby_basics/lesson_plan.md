@@ -155,8 +155,8 @@ while i < 10
 end
 ```
 
-- Ask class why its looping infinitely and how we can fix it.
-- switch while with an until loop
+- Ask class why its looping infinitely and how we can fix it.(3m)
+- switch while with an until loop(2m)
 
 
 
