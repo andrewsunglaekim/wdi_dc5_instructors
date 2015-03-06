@@ -2,28 +2,28 @@
 
 ### Concepts
 - describe the utility of computer programming
-- define REPL acronym and use of REPL
-- identify role of 5 common data types
+- define the role of a REPL in programming
+- list 5 common data types used in ruby and their uses
 - differentiate between statements and expressions
 - describe what variables are and what they are used for
-- explain mutability vs immutability
-- describe what a method is and what it is used for
-- describe input, output and side effects.(programming)
-- identify type errors
+- explain the concepts of mutability and immutability
+- describe what a method is and why they are useful
+- differentiate between input, output and side effects for methods
+- explain what a type error is
+
+
+
 - explain why control flow is used in programming
 - explain what conditionals are, and why we use them
+
+### Mechanics
+- use REPL to evaluate ruby code
+- create and run a ruby program
+
+
 - Use boolean logic (&&, ||, !) to combine and manipulate boolean statements
 - Use if, else, elsif statements to control logic flow in a Ruby program
 - Use Ruby case statements
-- create and run a ruby program
-
-### Mechanics
-- utilize REPL to do basic ruby operations
-- write a program that
-	- uses 4 of 5 data types
-	- has user input
-	- has an output
-	- *bonus* alters values of the input to be the output
 
 ### Connection to Big Goal
 Establish a foundation of the ruby language. It'll be the premise that is used to build a toolset for web development.
@@ -44,57 +44,72 @@ Bringing us back to ruby basics. To learn the building blocks of your first comp
 ## I do (ruby basics)
 - Use Prior Knowledge Inventory to extrapolate information about data types from the student. (5m)
 - explain REPL and show uses(narrate 17m)
+- speak to result with respect to statements in ruby
+
 - List potential data types(2m)
-	- list data types
+	- list data types(objects)
+		- objects have data/info
+		- objects have methods
+	- string(show them the documentation)
 	- floats
-	- integers(FIXNUM)
-	- string
+	- integers(FIXNUM)(show docs)
 	- boolean
-	- symbol
-- use some methods within REPL
-	- upcase
-	- downcase
-	- class
-	- puts
+	- symbol (immutable lightweight string, tend to use them as labels, or options)
+	- similar things to do for each datatype
+		- class
+		- docs
+		- show example methods
 
 - use variables within REPL, question students while exploring about mutability and assignment(narrate 10m)
+	- ask why we use variables?
+	- set variable to a = "something"
 	- set variable to the_number_ten = 10
 	- speak briefly about naming convention and semantic naming 
 		- what are some things about this variable name that is good?
 		- "" is bad?
 		- going forward we want to name things semantically, but not the extreme as the above example
+
 - Draw and show diagram for I/O/side effects in a method(5m)
 	- show input output and side effects for
 	- string.upcase
-	- string.upcase!
 	- puts
+	- gsub (inputs are both the object being called on and arguments)
+  - fist to five
+  	- who is confident they can differentiate between return values(output) and side effects
 
-- Draw some opinions from students as to what statements and expressions are and then say what they are(5m) ** statement has return value also has a return value, expressions that are apart of statements
-	- Think of the expressions as small parts of a sentence. Think of the statement as that completed sentence or thought. One line in your method or loop could be an expression, and the conglomeration of those expressions into a closed loop or method could be thought of as a statement.
-	- in ruby there is no real differentiation
+#### Mutability
+- what does mutability mean?
+- can I change something without changing the assignment?
+```
+my_name = "andy"
+your_name = "andy"
+my_name.object_id
+your_name.object_id
+
+name = "bob"
+another_name = name
+name.upcase!
+another_name
+
+symbol = :new_symbol
+symbol.upcase
+symbol.upcase! # talk about i/o/side effects
+
+```
+
 ### break(10m)
 
 
 ## We do(ruby basics)
 - guided practice with REPL(15 m)
-	- Teach use cases for REPL first(5m)
-
-```
-a = 10
-pi = 3.14
-string = "hi i'm a string"
-boolean = true
-symbol = :bob
-pi.class
-boolean.class
-```
-  - fist to five
-  	- who is confident they can differentiate between return values(output) and side effects
 
 - Instruct students to experiment with pry and random methods they've come across.
 	- documentation scavenger hunt
+		- first, speak to how to generally read documentation
 		- direct them to ruby strings docs for materials to use
+		- (pick some methods for students to look up) || (find 3 methods on data types we learned and write down a summary of them)
 		- walk around class to observe progress(10m)
+
 - run through the first 5 exercises as a class together from assignment-exercise.md
 
 
@@ -133,6 +148,10 @@ boolean.class
 	- >, >=
 
 - write and narrate through the following code (5m)
+
+##### Practice exercise with conditional
+
+- write and narrate through the following code (5m)
 ```
 puts 'Welcome to the club! How old are you?'
 age = gets.chomp.to_i
@@ -147,6 +166,8 @@ end
 ```
 - why doesn't the elsif work with ages greater than 75?
 
+(case statements)
+
 - write and narrate through the following code(10m)
 ```
 i = 0
@@ -158,9 +179,11 @@ end
 - Ask class why its looping infinitely and how we can fix it.(3m)
 - switch while with an until loop(2m)
 
+##### Practice Exercise with loops
 
 
 ## Make a temperature converter(30m)
+- demo converter and personal assistant command
 
 HAMco keeps up with the trends, and we know that 'retro' is the latest fad among today's youth. HAMco needs a CLI based temperature converter!
 
