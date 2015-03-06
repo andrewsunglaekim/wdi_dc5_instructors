@@ -98,33 +98,65 @@ boolean.class
 - run through the first 5 exercises as a class together from assignment-exercise.md
 
 
-## You do
-- whiteboard rest of problems in groups, don't allow students to input anything into computers.(18m)
-- discuss findings and go over groups problems(10m)
+## You do(ruby basics)
+- whiteboard rest of problems in groups, don't allow students to input anything into computers.(10m)
+- discuss findings and go over groups problems(5m)
+
 
 ### break(10m)
-
+	
 ## Reframe for conditionals/loops
 - Ask class what they think the purposes are for conditionals and loops/ mini discussion (5m)
 
-## I do
-- creating and running a ruby program
+## I do(conditionals/loops)
+- creating and running a ruby program (5m)
 	- create a simple hello world program through terminal
 	- run program in terminal
+- true vs false(5m)
+	- also gloss over truthy and falsey
+		- being a value is truthy
+		- nil is falsey
+- Draw truth tables for ! and && (2m)
+	- true && true
+	- true && false
+	- !true
+	- !false
+- have students do TT for || (5m)
+	- true || false
+	- false || true
+	- false || false
+	- true || true
+- demonstrate comparison operators inside IRB
+	- ==
+	- !=
+	- <, <=
+	- >, >=
 
-- write and walk through the following code (5m)
+- write and narrate through the following code (5m)
 ```
 puts 'Welcome to the club! How old are you?'
 age = gets.chomp.to_i
 if age > 20
   puts "Welcome to the club!"
 elsif age > 75
-	puts "You're welcome to come in, but I don't think this is the place for you..."
+  puts "You're welcome to come in, but I don't think this is the place for you..."
 else
-	puts "Hey kid! Get outta here!"
+  puts "Hey kid! Get outta here!"
 end
 
 ```
+- why doesn't the elsif work with ages greater than 75?
+
+- write and narrate through the following code(10m)
+```
+i = 0
+while i < 10
+  puts i
+end
+```
+
+- Ask class why its looping infinitely and how we can fix it.
+- switch while with an until loop
 
 
 
