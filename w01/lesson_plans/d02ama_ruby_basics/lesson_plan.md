@@ -64,10 +64,12 @@ Bringing us back to ruby basics. To learn the building blocks of your first comp
 	- ask why we use variables?
 	- set variable to a = "something"
 	- set variable to the_number_ten = 10
-	- speak briefly about naming convention and semantic naming 
+	- speak briefly about naming convention and semantic naming
 		- what are some things about this variable name that is good?
 		- "" is bad?
 		- going forward we want to name things semantically, but not the extreme as the above example
+		- do full_name in REPL, than draw diagram
+
 
 - Draw and show diagram for I/O/side effects in a method(5m)
 	- show input output and side effects for
@@ -119,7 +121,7 @@ symbol.upcase! # talk about i/o/side effects
 
 
 ### break(10m)
-	
+
 ## Reframe for conditionals/loops
 - Ask class what they think the purposes are for conditionals and loops/ mini discussion (5m)
 
@@ -217,21 +219,3 @@ ERD's
 database
 
 SQL
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
