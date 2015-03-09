@@ -40,3 +40,35 @@ Control Flow is foundational to computer programming
 	- >, >=
 
 - write and narrate through the following code (5m)
+
+##### Practice exercise with conditional
+
+- write and narrate through the following code (5m)
+```
+puts 'Welcome to the club! How old are you?'
+age = gets.chomp.to_i
+if age > 20
+  puts "Welcome to the club!"
+elsif age > 75
+  puts "You're welcome to come in, but I don't think this is the place for you..."
+else
+  puts "Hey kid! Get outta here!"
+end
+
+```
+- why doesn't the elsif work with ages greater than 75?
+
+(case statements)
+
+- write and narrate through the following code(10m)
+```
+i = 0
+while i < 10
+  puts i
+end
+```
+
+- Ask class why its looping infinitely and how we can fix it.(3m)
+- switch while with an until loop(2m)
+
+##### Practice Exercise with loops
