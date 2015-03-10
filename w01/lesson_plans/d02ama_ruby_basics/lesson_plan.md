@@ -39,17 +39,19 @@ Bringing us back to ruby basics. To learn the building blocks of your first comp
 
 - List potential data types(2m)
 	- list data types(objects)
-		- objects have data/info
-		- objects have methods
+		- in the next couple of weeks, we'll be talking alot about objects. all you need to know for now is:
+			- objects have data/info
+			- objects have methods
+	- similar things to do for each datatype
+		- class
+		- docs
+		- show example methods
 	- string(show them the documentation)
 	- floats
 	- integers(FIXNUM)(show docs)
 	- boolean
 	- symbol (immutable lightweight string, tend to use them as labels, or options)
-	- similar things to do for each datatype
-		- class
-		- docs
-		- show example methods
+	- nil
 
 - use variables within REPL, question students while exploring about mutability and assignment(narrate 10m)
 	- ask why we use variables?
@@ -113,24 +115,6 @@ symbol.upcase! # talk about i/o/side effects
 
 ### break(10m)
 
-## Make a temperature converter(30m)
-- demo converter and personal assistant command
-
-AMAco keeps up with the trends, and we know that 'retro' is the latest fad among today's youth. AMAco needs a CLI based temperature converter!
-
-- Create a ruby program that asks the user for input
-
-- It should convert the input from celsius to fahrenheit and then puts that value.
-
-- ask the user what the starting temperature is(fahrenheit or celsius)
-
-- output should be opposite of starting temperature type
-
-- add Kelvin to the program as well!
-
-- Using loops, start making a personal assistant commandline app that has the temperature converter as an option in its interface
-
-- *BONUS* have your personal assistant app do something besides converting temperature!
 
 ## Closing
 - Summarize learning objectives
