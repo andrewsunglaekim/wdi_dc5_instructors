@@ -21,8 +21,7 @@ Establish a foundation of the ruby language. It'll be the premise that is used t
 ### Opening Framing & Hook
 
 Prior Knowledge Inventory(5m)
--	list uses of computer programming
-
+-	list every day uses of computer programming
 - turn and talk(3m)
 	- *what did the programmer think about in order to write the program for email*
 	- probe about data types
@@ -46,23 +45,24 @@ Bringing us back to ruby basics. To learn the building blocks of your first comp
 		- class
 		- docs
 		- show example methods
-	- string(show them the documentation)
+	- strings
 	- floats
-	- integers(FIXNUM)(show docs)
-	- boolean
-	- symbol (immutable lightweight string, tend to use them as labels, or options)
+	- integers(FIXNUM)
+	- booleans
+	- symbols (immutable lightweight string, tend to use them as labels, or options)
 	- nil
 
 - use variables within REPL, question students while exploring about mutability and assignment(narrate 10m)
 	- ask why we use variables?
+	- set variable name = "andy"
 	- set variable to a = "something"
 	- set variable to the_number_ten = 10
 	- speak briefly about naming convention and semantic naming
 		- what are some things about this variable name that is good?
 		- "" is bad?
 		- going forward we want to name things semantically, but not the extreme as the above example
-		- do full_name in REPL, than draw diagram
-
+		- do full_name in REPL, than draw diagram(variables/value chart)
+			- first_name + last_name = full_name
 
 - Draw and show diagram for I/O/side effects in a method(5m)
 	- show input output and side effects for
