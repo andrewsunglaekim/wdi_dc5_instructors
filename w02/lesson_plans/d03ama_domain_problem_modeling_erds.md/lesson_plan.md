@@ -7,7 +7,7 @@
 - explain the difference between a database managment system and a database
 - explain how a DBMS, a database and SQL relate to own another
 - Describe the basic parts of a schema(using ERD's), entities and attributes
-- 
+-
 
 #### Mechanics
 - Use ERD's for domain/database modeling
@@ -19,7 +19,24 @@ Where are we now? We've done some basic ruby programming. We've learned about ob
 - communicate with your partner some examples of applications that utilize a database.
 - write students examples on whiteboard
   - pick a couple to extrapolate and prod students about attributes and entities
+
+##### what is a relationship?
+- A relationship creates a connection between entities that allows us to take an item from our database and retrieve items that are related to it
+
   - start talking about different relationships between entities
     - one-to-one
     - one-to-many
     - many-to-many
+
+#### We do
+Data modeling & ERDs for facebook
+what are some entities and relationships in facebook?
+Whiteboard ERD's
+
+#### You do
+Data modeling & ERDs for popular websites:
+1. Twitter
+2. Reddit
+3. Instagram
+4. LinkedIn
+5. Craigslist
