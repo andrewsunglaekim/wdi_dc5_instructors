@@ -1,4 +1,9 @@
-#### Mechanics
+## Learning Objectives
+
+### Concepts
+- Explain ACID in laymans terms
+
+### Mechanics
 - Execute basic SQL commands to execute CRUD actions in a database
   - CREATE/DROP DATABASE
   - CREATE/DROP TABLE

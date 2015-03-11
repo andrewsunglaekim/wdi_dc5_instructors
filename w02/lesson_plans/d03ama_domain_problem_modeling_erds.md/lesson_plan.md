@@ -47,6 +47,7 @@ Visualize it as a person. Maybe a person named "Bob" would be an individual elem
     - many-to-many
       - doctors and patients
       - instructor and students
+    - polymorphic relationship
 
 #### We do
 Data modeling & ERDs for facebook
