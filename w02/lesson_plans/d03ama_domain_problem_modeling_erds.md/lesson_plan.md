@@ -25,6 +25,10 @@ Where are we now? We've done some basic ruby programming. We've learned about ob
 
   - start talking about different relationships between entities
     - one-to-one
+      - rarer relationship
+      - user and their profile
+      - 
+
     - one-to-many
     - many-to-many
 
@@ -33,7 +37,7 @@ Data modeling & ERDs for facebook
 what are some entities and relationships in facebook?
 Whiteboard ERD's
 
-#### You do
+#### You do in groups
 Data modeling & ERDs for popular websites:
 1. Twitter
 2. Reddit
