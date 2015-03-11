@@ -23,7 +23,7 @@ Where are we now? We've done some basic ruby programming. We've learned about ob
 - write students examples on whiteboard
   - pick a couple to extrapolate and prod students about attributes and entities
 
-##### what is are entities and attributes
+##### what are entities and attributes
 The long and short of it. Entities are a table in your database. And attributes are the pieces of data that are attached to individual elements of entities.
 
 Visualize it as a person. Maybe a person named "Bob" would be an individual element of the people table in your database. And bob's attributes would be his age, name, and whatever else you want.
