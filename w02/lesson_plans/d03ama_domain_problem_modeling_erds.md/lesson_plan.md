@@ -51,9 +51,19 @@ Visualize it as a person. Maybe a person named "Bob" would be an individual elem
 #### We do
 Data modeling & ERDs for facebook
 what are some entities and relationships in facebook?
+- users
+  - profile
+- posts
+  - body
+  - timestamp
+- comments
+  - body
+  - timestamp
+- photos
 Whiteboard ERD's
 
 #### You do in groups
+Break into groups of 4 or 5 and start data modeling & ERD's
 Data modeling & ERDs for popular websites:
 1. Twitter
 2. Reddit
