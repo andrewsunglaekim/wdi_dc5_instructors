@@ -7,10 +7,13 @@
 - explain the difference between a database managment system and a database
 - explain how a DBMS, a database and SQL relate to own another
 - Describe the basic parts of a schema(using ERD's), entities and attributes
--
+
 
 #### Mechanics
 - Use ERD's for domain/database modeling
+
+#### Connection to Big Goal
+Saving state is one of the fundamentals of programming. Important for students to understand the concepts of domain modeling.
 
 #### Opening Framing
 Where are we now? We've done some basic ruby programming. We've learned about object oriented programming and learned a whole bunch of methods, But we don't have a way to persist our data. We need a way to save state.
@@ -35,10 +38,15 @@ Visualize it as a person. Maybe a person named "Bob" would be an individual elem
     - one-to-one
       - rarer relationship
       - user and their profile
-      -
+      - office and office manager
+      - sometimes it indicates that it should be attributes instead of another entity
 
     - one-to-many
+      - user has many posts
+      - post has many comments
     - many-to-many
+      - doctors and patients
+      - instructor and students
 
 #### We do
 Data modeling & ERDs for facebook
