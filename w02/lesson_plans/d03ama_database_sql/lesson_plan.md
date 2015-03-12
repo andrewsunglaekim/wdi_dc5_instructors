@@ -24,7 +24,8 @@
 
 ### Opening Framing
 _What is a database?_
-- A database is a persistent way to store and access information that we need throughout the lifetime of our applications
+- We need to find a way to save state in our applications. There needs to be a programatic capability that we have in order to do this.
+- A database is a persistent way to store and access information that we need throughout the lifetime of our applications.
 
 _Why do we need databases?_
 - Persistence: we need a way to store data potentially forever, in such a way that the data will not change or be destroyed over time.
@@ -33,7 +34,20 @@ _Why do we need databases?_
 - Concurrency: we need the ability for multiple connections to be made to the database simultaneously so more than one person or entity can act at once
 - Scalability: we need to be able to grow from a small dataset to a large dataset easily, and even to store data in multiple physical locations while still querying all of the data
 
+First thing we want to do is setup Postgres the database management system we'll be using.
 
+```
+$ brew update
+$ brew doctor
+$ brew install postgresql
+$ initdb /usr/local/var/postgres -E utf8
+$ mkdir -p ~/Library/LaunchAgents
+$ cp /usr/local/Cellar/postgresql/<<<YOUR_PSQL_VERSION_NUMBER>>>/homebrew.mxcl.postgresql.plist ~/Library/LaunchAgents/
+$ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+$ gem install pg
+```
+
+If something goes wrong during the Homebrew installation, you can use [http://postgresapp.com/](http://postgresapp.com/) instead
 
 ACID
 - atomicity
