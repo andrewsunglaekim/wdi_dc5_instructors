@@ -12,6 +12,14 @@
 
 ## Git
 
+- Explain what Git is and why we use it
+- Initialize a local git repository
+- Add and commit changes to a git repository
+- Create and switch between branches
+- Explain what a branch is and why we would use one
+- Be able to merge branches 
+- Explain what happens when you merge two branches
+
 ## Intro Ruby
 
 - Explain what conditionals are, and why we use them
