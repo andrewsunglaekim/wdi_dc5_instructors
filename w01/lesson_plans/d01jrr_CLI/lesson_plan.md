@@ -42,11 +42,9 @@ At each step, ask students what they see and what's happening.
 
 ---
 
-###	Write the steps of what we just did on the board.
+###	What are the steps of what we just did?
 
----
-
-###	Following the steps on the board, do the same stuff WITHOUT the Command Line.
+Write the steps of what we just did on the board.
 
 1.	Open your Home folder
 
@@ -56,15 +54,21 @@ At each step, ask students what they see and what's happening.
 
 ---
 
+###	Following the steps on the board, do the same stuff WITHOUT the Command Line.
+
+---
+
+###	Which way was easier?
+
+---
+
 ###	This is called the "command line", also "shell", also "bash".
 
 -	The command line / shell / bash is a way of interacting with your computer without using a fancy graphical interface
 
 ---
 
-###	Which way was easier?
-
--	Why would programmers so often work in the command line?
+###	Why would programmers so often work in the command line?
 
 ---
 
@@ -81,6 +85,8 @@ At each step, ask students what they see and what's happening.
 	-	A **shell** is a program that interacts with your operating system. The **terminal** runs the shell. Used to be an physical computer. Now just an app.
 
 	-	Might look familiar to old folks using old computers: no mouse
+
+-	Difference between bash, shell, terminal, CLI
 
 ---
 
@@ -104,9 +110,13 @@ At each step, ask students what they see and what's happening.
 
 		-	Person getting haircut is argument
 
-		-	`haircut -mohawk Robin`
+		-	`haircut --mohawk Robin`
 
--	`say -v 'Hello'`
+	-	`-` vs `--`
+
+-	Argument is usually a file
+
+-	`say 'Hello'`
 
 -	`say -v ?`
 
@@ -116,56 +126,59 @@ At each step, ask students what they see and what's happening.
 
 -	`brew install tree`
 
+	-	What does brew do?
+
 -	`ruby --version`
 
+-	`ruby -v`
+
+-	`ruby`
+
+-	Ctrl + C
+
+-	Ctrl + K
+
+-	Type `man ruby`
+
+-	Introduce manuals
+
+	-	Things in brackets are optional
+
+	-	Structure of the manual
+
 ---
 
-###	Manuals
+###	Every command is executed in the context of the current folder
 
--	`man`
+-	`pwd`
 
----
-
-###	Paths Intro
-
-1.	`cd ~`
+-	`cd ~`
 
 -	`ls`
 
 -	`cd Desktop`
 
--	`cd ..`
+-	Go up with `..`
 
--	`cd .`
+	-	`cd ..`
 
 -	`cd` Drag and drop
 
 -	`cd ~`
 
+	-	Shortcut to home folder regardless of where you are
+
+-	Tab completion
 
 -	Other funky punctuation: `$`
 
----
-
-##	Navigation exercise
-
-###	bit.ly/1EO1SRl
-
----
-
 ###	Absolute vs relative
 
--	Absolute begins with `/`, relative begins with `.`
+-	Your current frame of reference
 
----
+-	Mailing addresses: Domestic vs international vs interplanetary vs universe
 
-##	Keyboard shortcuts
-
--	Ctrl + C
-
-	-	If it just sits there, try writing something after it.
-
--	Ctrl + K
+-	`open` a file using an absolute path, then a relative path
 
 ---
 
@@ -181,29 +194,21 @@ Play with the commands and figure out:
 
 -	For what (if anything) is the command's name an abbreviation?
 
--	What happens if you write something after the command?
+-	Identify a useful flag for each command
 
 |A|B|C|D|
 |-|-|-|-|
 |`touch`	|`cat`		|`pwd`		|`history`	|
-|`mkdir`	|`head`		|`tree`		|`cal`		|
-|`ls -a`	|`tail`		|`open`		|`!!`		|
+|`mkdir`	|`head`		|`tree`		|`mv`		|
+|`ls`		|`tail`		|`open`		|`cp`		|
 
-### Move back to seats
+-	`ls -a`
 
-###	10m) Review: What did you learn?
+-	`cp -R`
 
--	Randomly call on students and ask name and meaning
+-	`mkdir -p`
 
--	Points to cover
-
-	-	Commands are usually acronyms hinting at what they do
-
-	-	Can always use man to get help
-
-	-	`.` and `..`
-
-	-	`cd` : What is a directory?
+-	Not worth time to memorize everything; know how to look it up
 
 ---
 
@@ -247,20 +252,23 @@ Play with the commands and figure out:
 
 -	Be **super careful** with `rm -r`.
 
+---
+
+###	Create working directory
+
+---
+
 ####	sudo
 
-1.	Make a new folder called "ImportantStuff"
+-	Think twice about it
 
-2.	Get Info, click lock, and change permissions to "Read Only"
+---
 
-3.	**Without writing anything after,** type `rm -r ImportantStuff`
+##	Navigation exercise
 
+###	bit.ly/1EO1SRl
 
--	What happened?
-
--	Write `sudo rm -r ImportantStuff`
-
-	-	What happened?
+-	Move into working directory
 
 ---
 
