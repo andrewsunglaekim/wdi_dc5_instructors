@@ -14,13 +14,15 @@
   - However, you can do this with Ruby, because statements are actually expressions, meaning they return a value.
 
 ~~~rb
-  am_i_cool = if name == "Randy"
+  def am_i_cool
+    if name == "Randy"
       "Oh yea!"
     elsif name == "Poindexter"
       "Eh ... not so much."
     else
       "I dunno, maybe."
     end
+  end
 ~~~
 
 
