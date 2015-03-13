@@ -54,3 +54,11 @@
 
 
 ## Enumeration
+
+- Compare loops to enumeration (e.g. each, times, map) and explain when you would use each
+- Use while loops to execute code multiple times
+- Explain differences between select, map, and delete
+- Set and update a base case condition to avoid infinite loops
+- Compare and contrast "break" and "next", and when you would use each
+- Use "break" and "next" to appropriately exit a loop
+- Explain what 'yielding' to a block means, and why it is necessary
