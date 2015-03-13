@@ -8,9 +8,7 @@
 
 -	Describe the difference between an absolute and a relative path
 
--	Understand the capability of the CLI and what *not* to do
-
--	Describe what a file or folder's permissions are
+-	Distinguish between safe and unsafe commands
 
 ## Git
 
