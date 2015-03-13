@@ -26,7 +26,7 @@
 - Explain why we use a REPL in development
 - Identify the roles of the 5 main data types used in Ruby programming
 - Explain what a variable is and what we use them for
-- Distinguish between a referenace and an assignment
+- Distinguish between a reference and an assignment
 - Distinguish between input and output and explain how they relate to functions
 
 ## GitHub
