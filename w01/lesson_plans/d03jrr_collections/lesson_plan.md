@@ -10,7 +10,7 @@
 
 -	Create both hashes that use strings as keys, and hashes that use symbols, and explain the difference
 
-##	Intro
+---
 
 Randy and I are planning a surprise birthday party for Jesse. Not including the 3 of us, we only have room for 3 other party-goers.
 
@@ -18,9 +18,9 @@ We each make a list.
 
 -	**(Make two lists of 6 students. The second list should have four names from the first.)**
 
-This is a **SET**.
+###	This is a [SET].
 
--	**(Write SET on board)**
+-	**(Write [SET] on board)**
 
 -	A *collection* -- a group of things that are somehow related, in no particular order.
 
@@ -46,9 +46,9 @@ Now we're down to 4 guests. Have to get to 3.
 
 		-	SORT
 
-This is an **ARRAY**.
+###	This is an [ARRAY].
 
--	**(Write ARRAY on board)**
+-	**(Write [ARRAY] on board)**
 
 -	Like a set, except the **order matters**, and therefore can have duplicate values
 
@@ -82,26 +82,106 @@ We have our list. Now we need to figure out who's bringing what.
 
 -	**Create hash, assigning people to supplies.**
 
-This is a **HASH**.
+###	This is a {HASH}.
 
--	A way of grouping things.
+-	**(Write {HASH} on board)**
+
+-	Like an array, but has a label for each item
 
 	-	Corned beef hash is a bunch of stuff mixed together
+
 
 -	Has **KEYS** and **VALUES**.
 
 	-	**What's a "key" on a map or a diagram?**
 
+	-	HASHROCKETS `=>` or fat arrows
+
 -	KEYS can be either strings, integers, or symbols
 
 	-	**Why would we probably not use integers as keys?**
 
--	
+	-	Keys have to be unique, like symbols
+
+```
+#	This is saying, "The person bringing cups is Joe. No, actually, it's Steve."
+{
+	"cups" =>	"Joe",
+	"cups" =>	"Steve"
+}
+```
 
 ---
 
--	**SET : COLLECTING**
+-	**What might I do if there are multiple people bringing cups?**
+
+	-	Make a **NESTED ARRAY**
+
+-	**What if there's one person bringing Dixie cups, and another person bringing champagne glasses?**
+
+```
+birthday_guests	= {
+	:cups	=> [
+		"Joe",
+		"Steve"
+	]
+}
+
+birthday_guests1 = {
+	:cupsDixie	=> "Joe",
+	:cupsChampagne	=> "Steve"
+}
+
+birthday_guests2 = {
+	:cups	=> {
+		"Dixie"	=> "Joe",
+		"Champagne"	=> "Steve"
+	}
+}
+
+birthday_guests3 = [
+	{
+		:name	=> "Joe",
+		:bringing	=> "Dixie cups"
+	},
+	{
+		:name	=> "Steve",
+		:bringing	=> "Champagne cups"
+	}
+]
+
+birthday_stuff = {
+	:guests	=> [
+		"Joe",
+		"Steve"
+	],
+	:supplies	=> [
+		"Dixie cups",
+		"Cake"
+	]
+}
+```
+---
+
+###	Quick review
 
 -	**ARRAY : ORDERING**
 
--	**HASH : GROUPING**
+-	**HASH : LABELING**
+
+-	Which uses which brackets?
+
+---
+
+###	Activity
+
+-	**(10m) Split into 4 groups and make a collection that includes for each person in the group...**
+
+	-	First name
+	-	Last name
+	-	Place of birth
+	-	Last thing you did full-time
+
+---
+
+###	Getting stuff out of your collection
