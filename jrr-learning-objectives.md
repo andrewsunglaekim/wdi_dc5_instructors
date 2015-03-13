@@ -31,6 +31,18 @@
 
 ## GitHub
 
+- Differentiate between Git and Github
+- List three best practices re: using git
+- Add SSH keys to github account
+- Add and remove a remote repository
+- Push commits to a remote repository
+- Fork and Clone existing repository from Github
+- Use Github to submit a pull request
+- Explain what a fork is and why we would use one
+- Explain difference between fetch and pull
+- Explain the difference between a clone and a fork
+- Diagram and explain the homework submission process
+
 ## Collections
 
 -	Describe the differences between arrays, hashes, sets, and ranges
