@@ -1,0 +1,57 @@
+students = [
+"Lindsey	Dragun",
+"Parmeet	Singh",
+"Hillary	Harlan",
+"Nick	Bumbarger",
+"matt	wuertz",
+"Zachary	Fleischmann",
+"Phillip	Winston",
+"Toby	Schaeffer",
+"Michael	Kendall",
+"Ali	Topaloglu",
+"Jamey	McElvain-Whitman",
+"Kevin	Bauer",
+"Nurichsan	Pratama",
+"Isatu	Conteh",
+"Haleigh	Harper",
+"don	mclamb",
+"Jared	Yamauchi",
+"Noah	Levine",
+"Sarah	Greene",
+"David	Zager",
+"Alif	Chowdhury",
+"Gwen	Mak",
+"Henry	Brooks",
+"Enoch	Shin",
+"Damon	Emde",
+"Nicholas	Small",
+"Janice	Min",
+"Eltahir	Eltahir",
+"Karen	Ochsenreiter",
+"Adrian	Maseda",
+"Rodger	Andersen",
+"Ryan	Keiper",
+"Brittany	Henson",
+"Aaron	Park",
+"Tamara	Peters",
+"Jonathan	Perry",
+"Julia	Rose",
+"keith	knox",
+"Preston	Straight",
+"Diana	Jurgielewicz",
+"Ammie	Mcculloch",
+"Allyson	Little",
+"Nabil	Hashmi",
+"Brad	Foster",
+"John	Moua",
+"Chad	Smith",
+"Jocelyn	Jeriah",
+]
+
+students.shuffle!
+students.each_with_index do |s, index|
+  puts "#{s}"
+  if index == 24
+    puts "===="
+  end
+end
