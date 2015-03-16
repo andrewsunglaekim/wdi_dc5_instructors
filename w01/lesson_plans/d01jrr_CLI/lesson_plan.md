@@ -272,17 +272,25 @@ Play with the commands and figure out:
 
 ---
 
-###	Customizing your bash profile
-
--	Functions
-
----
-
 ##	Navigation exercise
 
 ###	bit.ly/1EO1SRl
 
 -	Move into working directory
+
+---
+
+###	Customizing your bash profile
+
+-	Functions
+
+-	Navigate to home folder, open .bash_profile for editing
+
+-	functionName(){
+
+	}
+
+-	Restart Terminal
 
 ---
 
