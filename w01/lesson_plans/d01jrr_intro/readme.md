@@ -30,9 +30,23 @@ __BREAK__: 10:30, 10 minutes
 	- This should be like a team, instructors are captains, but we're all in this together
 	- Unlike traditional learning environments, things aren't competitive here - they're collaborative
 	- Get to know everyone, work with everyone you can, not only because it's fun, but because these are people who will be in your industry and your city for a long time
+- Difference between cohorts
 - Homework
 - Attendance & Timeliness
 - Syllabus
 - Class materials
 - Time Committment
 - 3 projects total
+
+## What we’ll learn
+
+- fundamentals of programming
+- data modeling and persistence
+- web fundamentals
+- web frameworks
+- collaboration
+- javascript
+- javascript frameworks
+- CS fundamentals
+
+- week 1 is review of the prework, deeper
