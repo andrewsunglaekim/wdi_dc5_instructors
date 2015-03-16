@@ -30,6 +30,10 @@ At each step, ask students what they see and what's happening.
 
 	-	What do you think it does?
 
+-	`brew install tree`
+
+	-	Ignore this for now
+
 -	Type `ls`
 
 	-	What do you see?
@@ -72,29 +76,21 @@ Write the steps of what we just did on the board.
 
 	-	Shell: an application that runs the command line
 
-	-	Bash: a specific shell
+	-	Bash: a specific shell type
 
----
-
-###	Why would programmers so often work in the command line?
-
----
-
-###	Brief history of Command Line
-
--	The command line is an interface to your operating system's services.
-
--	What is a **GUI**?
+	-	The **terminal** runs the shell. Used to be an physical computer. Now just an app.
 
 -	Brief history
 
 	-	Based on Unix
 
-	-	A **shell** is a program that interacts with your operating system. The **terminal** runs the shell. Used to be an physical computer. Now just an app.
-
 	-	Might look familiar to old folks using old computers: no mouse
 
--	Difference between bash, shell, terminal, CLI
+---
+
+###	Why would programmers so often work in the command line?
+
+-	What is a **GUI**?
 
 ---
 
@@ -132,19 +128,29 @@ Write the steps of what we just did on the board.
 
 ###	Namespaces and double-dashes
 
--	`brew install tree`
+-	Namespaces
 
-	-	What does brew do?
+	-	`ruby`
 
--	`ruby --version`
+	-	`ruby -v`
 
--	`ruby -v`
+	-	`ruby --version`
 
--	`ruby`
+###	Helpful stuff
 
--	Ctrl + C
+-	Shortcuts
 
--	Ctrl + K
+	-	Ctrl + D
+
+	-	Ctrl + C
+
+	-	Ctrl + K
+
+-	`gem help`
+
+	-	`gem -h`
+
+	-	`gem --help`
 
 -	Type `man ruby`
 
@@ -158,11 +164,9 @@ Write the steps of what we just did on the board.
 
 ###	Every command is executed in the context of the current folder
 
--	`pwd`
+-	`mkdir` as example
 
--	`cd ~`
-
--	`ls`
+	-	Where does it make the directory?
 
 -	`cd Desktop`
 
@@ -204,17 +208,11 @@ Play with the commands and figure out:
 
 -	Identify a useful flag for each command
 
-|A|B|C|D|
-|-|-|-|-|
-|`touch`	|`cat`		|`pwd`		|`history`	|
-|`mkdir`	|`head`		|`tree`		|`mv`		|
-|`ls`		|`tail`		|`open`		|`cp`		|
-
--	`ls -a`
-
--	`cp -R`
-
--	`mkdir -p`
+|A|B|C|D|E|
+|-|-|-|-|-|
+|`touch`|`cat`	|`pwd`	|`history`	|`ls -a`	|
+|`mkdir`|`head`	|`tree`	|`mv`		|`cp -R`	|
+|`ls`	|`tail`	|`open`	|`cp`		|`mkdir -p`	|
 
 -	Not worth time to memorize everything; know how to look it up
 
@@ -258,17 +256,23 @@ Play with the commands and figure out:
 
 -	Safety check against deleting stuff you don't mean to delete.
 
--	Be **super careful** with `rm -r`.
+	1.	Recreate `vader.txt`
 
----
+	-	Change permissions
 
-###	Create working directory
+	-	Try to `rm -r` again
+
+-	Be **super** careful with `rm -rf`.
 
 ---
 
 ####	sudo
 
 -	Think twice about it
+
+---
+
+###	Create working directory
 
 ---
 
