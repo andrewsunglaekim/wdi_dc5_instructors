@@ -16,7 +16,7 @@
 
 -	Describe what a file or folder's permissions are
 
--	Add a custom alias to .bash_profile
+-	Add a custom alias and function to .bash_profile
 
 ---
 
@@ -272,7 +272,9 @@ Play with the commands and figure out:
 
 ---
 
-###	Create working directory
+###	Customizing your bash profile
+
+-	Functions
 
 ---
 
