@@ -12,9 +12,11 @@
 
 -	Describe the difference between an absolute and a relative path
 
--	Understand the capability of the CLI and what *not* to do
+-	Distinguish between "safe" and "dangerous" CLI commands
 
 -	Describe what a file or folder's permissions are
+
+-	Add a custom alias to .bash_profile
 
 ---
 
@@ -65,6 +67,12 @@ Write the steps of what we just did on the board.
 ###	This is called the "command line", also "shell", also "bash".
 
 -	The command line / shell / bash is a way of interacting with your computer without using a fancy graphical interface
+
+	-	Command line: issue lines of commands to your comp
+
+	-	Shell: an application that runs the command line
+
+	-	Bash: a specific shell
 
 ---
 
