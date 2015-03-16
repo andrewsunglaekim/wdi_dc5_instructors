@@ -78,21 +78,21 @@ map at the front of the class.
 
 Use the resulting map as a guide to frame the course week by week:
 
-W1: Fundamentals of Programming
-W2: Writing good programs
-W3: Data Modeling and Persistence
-
-W4: Fundamentals of the Web
-W5: MVC Frameworks
-W6: Collaboration
-
-W7: JavaScript / Second Language
-W8: MV* Frameworks (Backbone)
-W9: MV* Framworks / Project
-
-W10: Exploration
-W11: CS Fundamentals / Job Prep
-W12: Final Project
+* W1: Fundamentals of Programming
+* W2: Writing good programs
+* W3: Data Modeling and Persistence
+* 
+* W4: Fundamentals of the Web
+* W5: MVC Frameworks
+* W6: Collaboration
+*
+* W7: JavaScript / Second Language
+* W8: MV* Frameworks (Backbone)
+* W9: MV* Framworks / Project
+*
+* W10: Exploration
+* W11: CS Fundamentals / Job Prep
+* W12: Final Project
 
 
 Frame Week 1 day by day, talk about how we are going over similar material as the
