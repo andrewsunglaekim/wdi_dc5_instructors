@@ -44,9 +44,14 @@ Three places you should know about:
 - Make at least three commits
 - Change the last commit message with `git commit --amend`
 
+## Viewing the history
 ```
 git log
 git lg # the alias
+```
+
+## Branching
+```
 git branch # is just a pointer
 touch {1..100}.txt
 ```
