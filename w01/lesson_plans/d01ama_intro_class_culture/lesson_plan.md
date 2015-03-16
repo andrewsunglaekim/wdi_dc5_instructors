@@ -11,6 +11,8 @@
 
 ## Introductions / Name Game
 
+Frame: Ask their name first
+
 Instructors and Jon introduce themselves, their background, etc.
 
 Instead of having students say something about themselves to the whole group,
@@ -49,7 +51,7 @@ empowered with the foundational knowledge to pursue a career in web development.
 ## Expectations
 
 Share with students, that based on the above, we have certain expectations for
-them:
+them (really they are necessary for them to succeed):
 
 * Be present and on time
 * Participate (during class, in projects, etc)
@@ -60,6 +62,11 @@ them:
 Ask students what expectations they have of us as instructors. This could be a
 good way to model us being good listeners, but also having authority to manage
 their expectations.
+
+## Difference between cohorts
+
+HW & topics may differ slightly
+Student expectations around not being on the same topics
 
 ## Web Dev 101
 
@@ -86,3 +93,7 @@ W9: MV* Framworks / Project
 W10: Exploration
 W11: CS Fundamentals / Job Prep
 W12: Final Project
+
+
+Frame Week 1 day by day, talk about how we are going over similar material as the
+pre-work, but more in depth.
