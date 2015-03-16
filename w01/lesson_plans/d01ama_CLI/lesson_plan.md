@@ -124,7 +124,7 @@ The terminal:
 
 ###	What are the steps of what we just did?
 
-Write the steps of what we just did on the board.
+Work with students to write the steps of what we just did on the board.
 
 1.	Open your Home folder
 
@@ -144,14 +144,15 @@ Now, close your computers for a second and watch this:
 ```
 COUNTER=0
 while [ $COUNTER -lt 20 ]; do
-    touch file_$COUNTER.txt
+    touch sample_file_$COUNTER.txt
     let COUNTER=COUNTER+1
 done
 ```
-`ls file*`
+`ls`
+`ls sample*`
 _Are those the files I just added?  And only those?_
 _Say bye.  Don't try this at home.  The `rm` command can be dangerous.  We'll cover this soon._
-`rm file*`
+`rm sample*`
 `ls`
 
 _Now THAT'S power._
@@ -208,7 +209,8 @@ CFU: Shout Out, write on board
 
 		-	Person getting haircut is argument
 
-		-	`haircut --mohawk Robin`
+		-	`haircut --mohawk Matt`
+    - `haircut --mullet "Billy Ray Cyrus"`
 
 	-	`-` vs `--`
 
