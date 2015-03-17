@@ -20,3 +20,14 @@ alias wdibuzz='_wdibuzz(){ curl "http://wdi-buzzer.herokuapp.com/api/buzz/do/$GA
 Save and close the file.
 
 Close and reopen terminal.
+
+
+## Try it out:
+
+Type this in your newly opened terminal:
+
+    wdibuzz
+
+You can also pass a value (for a Fist to Five response).
+
+    wdibuzz 3
