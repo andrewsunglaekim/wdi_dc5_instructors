@@ -44,6 +44,7 @@ Control Flow is foundational to computer programming
 ##### Practice exercise with conditional
 
 - Have them write the code for the below.
+
 ```
 puts 'Welcome to the club! How old are you?'
 age = gets.chomp.to_i
