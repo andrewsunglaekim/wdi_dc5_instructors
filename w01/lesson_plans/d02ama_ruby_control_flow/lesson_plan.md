@@ -58,7 +58,24 @@ end
 ```
 - why doesn't the elsif work with ages greater than 75?
 
-(case statements)
+Another way to do conditionals is utilizing case statements
+
+```
+puts "How many pieces of pizza can you eat??"
+pizza_slice_count = gets.chomp.to_i
+case pizza_slice_count
+when 0
+	puts "Oh, you must not like pizza"
+when 1
+	puts "Oh, you must not be very hungry"
+when 2
+	puts "2 pieces eh?"
+when 3
+  puts "Thats a good amount of pizza!"
+else
+	puts "we're going to have to order more pizza"
+ end
+```
 
 - write and narrate through the following code(10m)
 ```
@@ -94,4 +111,4 @@ AMAco keeps up with the trends, and we know that 'retro' is the latest fad among
 
 
 #### References
-[http://code.tutsplus.com/tutorials/ruby-for-newbies-conditional-statements-and-loops--net-16537](http://code.tutsplus.com/tutorials/ruby-for-newbies-conditional-statements-and-loops--net-16537)
+	[http://code.tutsplus.com/tutorials/ruby-for-newbies-conditional-statements-and-loops--net-16537](http://code.tutsplus.com/tutorials/ruby-for-newbies-conditional-statements-and-loops--net-16537)
