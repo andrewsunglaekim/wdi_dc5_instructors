@@ -64,6 +64,19 @@ Bringing us back to ruby basics. To learn the building blocks of your first comp
 		- do full_name in REPL, than draw diagram(variables/value chart)
 			- first_name + last_name = full_name
 
+### We do
+- guided practice with REPL(15 m)
+
+- Instruct students to experiment with pry and random methods they've come across.
+	- documentation scavenger hunt
+		- first, speak to how to generally read documentation
+		- direct them to ruby strings docs for materials to use
+		- break into 4 groups to look up methods in groups then share findings to class
+			string, count, gsub, split, to_i, center, lstrip
+			fixnum, %, abs, to_s, fdiv, to_f, even?
+		- (pick some methods for students to look up) || (find 3 methods on data types we learned and write down a summary of them)
+		- walk around class to observe progress(10m)
+
 - Draw and show diagram for I/O/side effects in a method(5m)
 	- show input output and side effects for
 	- string.upcase
@@ -96,14 +109,7 @@ symbol.upcase! # talk about i/o/side effects
 
 
 ## We do(ruby basics)
-- guided practice with REPL(15 m)
 
-- Instruct students to experiment with pry and random methods they've come across.
-	- documentation scavenger hunt
-		- first, speak to how to generally read documentation
-		- direct them to ruby strings docs for materials to use
-		- (pick some methods for students to look up) || (find 3 methods on data types we learned and write down a summary of them)
-		- walk around class to observe progress(10m)
 
 - run through the first 5 exercises as a class together from assignment-exercise.md
 
@@ -111,6 +117,11 @@ symbol.upcase! # talk about i/o/side effects
 ## You do(ruby basics)
 - whiteboard rest of problems in groups, don't allow students to input anything into computers.(10m)
 - discuss findings and go over groups problems(5m)
+
+## I do
+Lets create a ruby program!
+Ok, so first thing, touch the file to create it
+Do hello world program in ruby then run in terminal.
 
 
 ### break(10m)

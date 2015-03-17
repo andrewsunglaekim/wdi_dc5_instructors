@@ -43,7 +43,7 @@ Control Flow is foundational to computer programming
 
 ##### Practice exercise with conditional
 
-- write and narrate through the following code (5m)
+- Have them write the code for the below.
 ```
 puts 'Welcome to the club! How old are you?'
 age = gets.chomp.to_i
@@ -86,6 +86,7 @@ end
 ```
 
 - Ask class why its looping infinitely and how we can fix it.(3m)
+- insert a break into loop
 - switch while with an until loop(2m)
 
 ##### Practice Exercise with loops
