@@ -1,3 +1,8 @@
+Toss pics into slack
+Collaborative notes
+whiteboard (dont' write too low)
+
+
 # Intro to Git (Local Repositories)
 
 ## Learning Objectives
