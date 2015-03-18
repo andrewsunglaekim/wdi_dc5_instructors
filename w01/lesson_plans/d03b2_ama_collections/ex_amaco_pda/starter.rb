@@ -49,9 +49,9 @@ loop do
   elsif menu_choice == "2"
     puts("Task Management isn't implemented yet.")
 
-  # NSA Wiretap
+  # PieDrop
   elsif menu_choice == "3"
-    puts("NSA Wiretap Requests aren't implented yet.")
+    puts("PieDrop (TM) - Drone Delivery of Pizza is currently in private beta...")
 
   # Quit
   elsif menu_choice == "4"
