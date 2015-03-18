@@ -23,6 +23,8 @@ Opening:
 
 Reiterate that we are constantly learning.  Taking a minute to be mindful about learning.
 
+(I am still learning.)[https://40.media.tumblr.com/b0e642e713a3339a5c5fbc4856d191d8/tumblr_mo9f7526X11sv5h0wo1_500.jpg]
+
 (Holding large bowl & spoon) "Picture yourself in an ancient temple.  It's the first day of class and the monks are getting their first taste of their new menu: rice."
 
 Request the 5 students to line up in front of the class.
