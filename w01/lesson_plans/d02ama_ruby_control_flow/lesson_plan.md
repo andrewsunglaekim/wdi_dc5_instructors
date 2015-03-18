@@ -40,6 +40,9 @@ Control Flow is foundational to computer programming
 	- >, >=
 
 - write and narrate through the following code (5m)
+```
+
+```
 
 ##### Practice exercise with conditional
 
@@ -58,6 +61,27 @@ end
 
 ```
 - why doesn't the elsif work with ages greater than 75?
+
+rehash truthy falsey with below conditionals
+```
+if true
+  puts "true is truthy, duh!"
+else
+  puts "true is falsey, wtf!"
+end
+
+if nil
+  puts "nil is truthy"
+else
+  puts "nil is falsey"
+end
+
+if 0
+  puts "0 is truthy"
+else
+  puts "0 is falsey"
+end
+```
 
 Another way to do conditionals is utilizing case statements
 
