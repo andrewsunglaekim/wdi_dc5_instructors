@@ -1,13 +1,13 @@
-def create_pyramid(num, str)
-  i = 1
-  while i <= num
-    num_spaces = num - i
-    num_chars = (i * 2) - 1
+def create_pyramid(num_rows, str)
+  current_row = 1
+  while current_row <= num_rows
+    num_spaces = num_rows - current_row
+    num_chars = (current_row * 2) - 1
     spaces = " " * num_spaces
     chars = str * num_chars
     # Display
     puts(spaces + chars + spaces)
-    i += 1
+    current_row += 1
   end
 end
 
