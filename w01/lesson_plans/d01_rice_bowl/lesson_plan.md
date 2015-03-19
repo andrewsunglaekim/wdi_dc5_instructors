@@ -13,7 +13,7 @@
 ## Prior to class
 Place the bowls, with an accompanying role card, on 5 desks. Make sure the bowl w/o a bottom gets the appropriate card.
 
-http://theslideshow.net/#simple/monk%20temple
+[Temple Slideshow](http://theslideshow.net/#simple/monk%20temple)
 
 ## Framing
 
@@ -23,7 +23,7 @@ Opening:
 
 Reiterate that we are constantly learning.  Taking a minute to be mindful about learning.
 
-(I am still learning.)[https://40.media.tumblr.com/b0e642e713a3339a5c5fbc4856d191d8/tumblr_mo9f7526X11sv5h0wo1_500.jpg]
+[I am still learning.](https://40.media.tumblr.com/b0e642e713a3339a5c5fbc4856d191d8/tumblr_mo9f7526X11sv5h0wo1_500.jpg)
 
 (Holding large bowl & spoon) "Picture yourself in an ancient temple.  It's the first day of class and the monks are getting their first taste of their new menu: rice."
 
