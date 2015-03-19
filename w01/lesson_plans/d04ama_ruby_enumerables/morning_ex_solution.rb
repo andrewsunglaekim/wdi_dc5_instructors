@@ -1,7 +1,12 @@
 def create_pyramid num, str
   i = 1
   while i <= num
-    puts (" " * (num-i)) + str * (i * 2 - 1) + (" " * (num-i))
+    num_spaces = num - i
+    num_chars = (i * 2) - 1
+    spaces = " " * num_spaces
+    chars = str * num_chars
+    # Display
+    puts(spaces + chars + spaces)
     i += 1
   end
 end
