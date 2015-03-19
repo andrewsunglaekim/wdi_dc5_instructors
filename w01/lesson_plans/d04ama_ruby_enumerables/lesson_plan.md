@@ -10,6 +10,9 @@
 
 
 #### Opening Framing & Hook
+PKI (review) use cases for loops
+- prod for the use case for loops in arrays if students aren't listing that one.
+
 In programming we come across this programming paradigm of looping through collections... often. So ruby contributors mades our lives alot easier by including the enumerable module.
 
 
@@ -33,4 +36,6 @@ Do the same thing functionally with an each method
 numbers.each do |number|
   puts number
 end
+
+numbers.each{|number| puts number}
 ```
