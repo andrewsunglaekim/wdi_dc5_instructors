@@ -1,4 +1,4 @@
-def create_pyramid num, str
+def create_pyramid(num, str)
   i = 1
   while i <= num
     num_spaces = num - i
