@@ -3,7 +3,7 @@
 Write a ruby method that creates a pyramid in the terminal that looks like this:
 
 ```
-# You're not allowed to just puts it as strings
+# You're not allowed to just puts it as string literals
 
     *
    ***
@@ -26,4 +26,18 @@ create_pyramid(3, "b")
 #   b
 #  bbb
 # bbbbb
+```
+
+*SUPER BONUS* - have the pyramid just be a shell!
+
+It should look something like this
+```
+# ooh so prettty
+
+    *
+   * *
+  *   *  
+ *     *
+*       *
+
 ```

@@ -1,4 +1,4 @@
-# Enumeration
+# Enumerables
 
 ## Learning Objectives
 ### Concepts
@@ -39,3 +39,15 @@ end
 
 numbers.each{|number| puts number}
 ```
+
+Show map method:
+
+```
+numbers.map do |number|
+  puts number
+end
+```
+
+Have a variable point to both enumerables and point out differences in outputs and the similarities of the input and side effects.
+
+Do exercise
