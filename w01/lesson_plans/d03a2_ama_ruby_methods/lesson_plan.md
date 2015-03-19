@@ -39,7 +39,7 @@ Delivery Tips:
 * WAM to print a personalized welcoming message to a particular person
 
 
-### Exercise - Role Play Methods
+### Exercise - Role Play Methods (15 minutes)
 
 Ask for 4 volunteers.
 Write a ```find_tallest``` method on the board, that takes 3 args, p1, p2, p3.
@@ -47,7 +47,7 @@ Demonstrate passing in 3 people, and how the method works when it is called.
 What happens if method shaves their head while comparing?
 Emphasize return values vs fact that I still have references to all arguments.
 
-### Scope
+### Scope (10 minutes)
 
 * Explore scope. What exists where? From where can I access what things?
 * Establish that input and output arguments are the only ways in and out of a method
@@ -61,7 +61,8 @@ def yell(text)
   puts text.upcase!
   puts "whew!"
 end
-puts favorite_language #note it's changed
+yell(favorite_language)
+puts favorite_language #note it's changed, we want to avoid this usually
 ```
 
 
@@ -74,14 +75,13 @@ Additionally, note / explain:
   * What does this method return?
   * What side effects does this method have?
 
-
 1. Write a method that displays a joke to the user (you pick the joke).
   * (This method should have 1 line in the body.)
 
 2. Modify the method so that it still displays the joke, but this time returns the string "joke told!" as well.
   * (2 lines)
 
-3. Modify the method so that you can give it an arbitrary joke, which it will show to the user instead of the original joke.
+3. Modify the method so that you can give it any joke (a parameter), which it will show to the user instead of the original joke.
   * (2 lines)
 
 4. Modify the method so that, after displaying the joke, it takes user input from the terminal and stores it in a variable.
@@ -104,12 +104,6 @@ Additionally, note / explain:
 ** Paws **
 
 9. Write a new method called "tell_two_jokes". It should call our original method, and take 4 arguments, joke1, answer1, joke2, answer2.
-
-
-#### Exercise 3 - Update AMAco PDA to Use Methods
-
-How can we use methods to update AMAco's PDA, to improve code quality?
-** What is code quality? **
 
 # Lesson Plan - Review Notes
 

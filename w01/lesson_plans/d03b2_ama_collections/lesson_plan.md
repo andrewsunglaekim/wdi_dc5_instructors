@@ -22,13 +22,17 @@ Delivery Tips:
 * Add and remove elements from a hash
 * Use built in Ruby methods to enumerate over a collection
 	* each
-	* map
+	* select
 
 ## Outline
 
 ### Arrays
 
 #### I-do
+
+##RUN THROUGH!!!
+How would we write a list of names?
+##END RUN THROUGH!!!
 
 **Why can't we use a bunch of variables?**
 

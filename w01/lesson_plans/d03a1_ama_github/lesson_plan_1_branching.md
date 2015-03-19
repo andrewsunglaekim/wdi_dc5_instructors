@@ -41,7 +41,7 @@ Students should practice creating a new git repo and then create branches on it.
 
 * Initialize a local repo, in a folder called cloudy_day
   * It should not be inside an existing git repo
-* Create a file called haiku.txt, write a haiku about the rain, add and
+* Create a file called haiku.txt, write a haiku about the clouds, add and
     commit the file.
 * What branch are we on?
 
