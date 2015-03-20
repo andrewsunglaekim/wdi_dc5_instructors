@@ -1,4 +1,4 @@
-# Find the ordinal
+# Return the ordinal
 # 1 -> 1st
 # 2 -> 2nd
 # 3 -> 3rd
@@ -8,24 +8,12 @@
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # Our code goes here.
 
-def ordinal_for_integer(number)
-  return "" unless number.is_a?(Integer)
-  abs_number = number.to_i.abs
-
-  if (11..13).include?(abs_number % 100)
-    "th"
-  else
-    case abs_number % 10
-      when 1; "st"
-      when 2; "nd"
-      when 3; "rd"
-      else    "th"
-    end
-  end
-end
-
+require 'active_support/inflector'
+include ActiveSupport::Inflector
 def integer_to_ordinal(integer)
-  "#{integer}#{ordinal_for_integer(integer)}"
+  return "" unless integer.is_a?(Integer)
+  # correct this code to pass all specs
+  ordinalize(integer)
 end
 
 #<<<<<<<<<<<<<<<<<<<<<<<<<<<<
