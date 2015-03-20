@@ -113,9 +113,11 @@ see: wmata_lines_solution.rb
 
 ---
 
-# You Do (10 min)
+# You Do: Rafactor This To Improve Clarity (10 min)
 
-## Refactor monthly_report.rb
+## Follow the refactoring steps as closely as you can.
+
+## Refactor monthly_report_starter.rb
 
 ``` ruby
 # monthly_report.rb
@@ -136,10 +138,10 @@ print_report("WDI Instructors", "03/2015", ["Adam", "Matt", "Andy"])
 
 Note:
 
-Copy to file.  Run.  Show output.
-Prompt for suggestions.
-def print_header
-def print_footer
+Framing:  
+- We're not just looking for duplication.  We also want to add clarity.
+- Review this code.  What can you extract to improve clarity?
+- Try to follow the refactoring steps exactly.
 
 ---
 
@@ -171,10 +173,6 @@ end
 
 print_report("WDI Instructors", "03/2015", ["Adam", "Matt", "Andy"])
 ```
-
----
-
-## You Do:  Refactor This Code
 
 ---
 
@@ -394,18 +392,6 @@ Fields, Jay; Harvie, Shane; Fowler, Martin; Beck, Kent (2009-10-15). Refactoring
 
 ---
 
-## Expectations
-(1:00:19)
-
-- It's a continual process
-- One Year Later
-
-Note:
-
-You don't know what the design should really be until a year later
-
----
-
 > Small is smooth
 
 > Smooth is fast
@@ -448,12 +434,25 @@ Note:
 
 ## Other topics covered
 
+- Expectations
 - Git
 - Technical Debt
 - Polite Legacy Codebase
 - Getting people to embrace refactoring
 - How to be a polite legacy codebase
 - Tradeoffs of Microservices
+
+---
+
+## Expectations
+(1:00:19)
+
+- It's a continual process
+- One Year Later
+
+Note:
+
+You don't know what the design should really be until a year later
 
 ---
 
