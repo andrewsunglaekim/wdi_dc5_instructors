@@ -206,6 +206,8 @@ Start with Pseudo Code
 I could keep writing pseudo code, that I might delete later... OR
 I could write documentation that lives on.
 
+rspec: describe, it
+
 ---
 
 ## Rhythm
@@ -218,7 +220,31 @@ I could write documentation that lives on.
 ---
 
 # You Do: Scrabble Scorer
+Setup:
+```
+$ gem install rspec
+$ open ~/.rspec
+```
 
+Add these lines:
+```
+--color
+--format documentation
+```
+
+---
+
+# You Do: Scrabble Scorer
+
+To run specs:
+```
+$ rspec bdd_scrabble_scorer_starter_spec.rb
+```
+
+To run your scorer:
+```
+ruby bdd_scrabble_scorer_starter.rb 11
+```
 
 ---
 
@@ -261,16 +287,6 @@ Note
 Write the obvious specs
 
 ---
-
-
-*********************
-TODO:
-
-- identify cfu.
-
-- exercise,
-  - copy specs
-
 
 ## Resources
 
