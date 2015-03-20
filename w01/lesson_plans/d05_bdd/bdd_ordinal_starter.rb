@@ -1,9 +1,16 @@
-
+# Return the ordinal
 # 1 -> 1st
 # 2 -> 2nd
 # 3 -> 3rd
 # ..
 # 10 -> 10th
+
+# Note:
+# Run tests with:
+#  $ rspec bdd_ordinal_starter_spec.rb
+#
+# Run code with:
+#  $ ruby bdd_ordinal_starter.rb 5 #=> 5th
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # Our code goes here.
@@ -16,22 +23,7 @@ end
 #<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
-def should_run_specs?
-  $PROGRAM_NAME.end_with?('rspec') # we ran this file via `rspec`
-end
-
-unless should_run_specs?
-  # score using the passed word
-  passed_number = ARGV[0]
-  score = integer_to_ordinal(passed_number)
-  puts "If you are in position (#{passed_number}), then you are the #{as_ordinal} player."
-
-else
-  # run the specs
-
-  RSpec.describe 'integer_to_ordinal' do
-    it "returns empty string for nil" do
-      expect(integer_to_ordinal(nil)).to eql("")
-    end
-  end
-end
+# score using the passed word
+passed_number = ARGV[0]
+as_ordinal = integer_to_ordinal(passed_number)
+puts "If you are in position (#{passed_number}), then you are the '#{as_ordinal}' player."
