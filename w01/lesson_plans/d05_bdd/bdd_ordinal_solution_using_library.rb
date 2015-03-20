@@ -10,14 +10,13 @@
 
 require 'active_support/inflector'
 include ActiveSupport::Inflector
-def integer_to_ordinal(integer)
-  return "" unless integer.is_a?(Integer)
+def integer_to_ordinal(ordinalize_this)
+  return "" unless ordinalize_this.is_a?(Integer)
   # correct this code to pass all specs
-  ordinalize(integer)
+  ordinalize(ordinalize_this)
 end
 
 #<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
 
 def should_run_specs?
   $PROGRAM_NAME.end_with?('rspec') # we ran this file via `rspec`
