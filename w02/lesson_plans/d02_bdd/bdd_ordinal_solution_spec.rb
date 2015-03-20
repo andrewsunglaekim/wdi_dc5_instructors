@@ -50,6 +50,10 @@ RSpec.describe 'integer_to_ordinal' do
   # end
 end
 
+describe 'ordinal' do
+
+end
+
 # describe "Bonus" do
 #   it "returns -11th for -11" do
 #     expect(integer_to_ordinal(-11)).to eql("-11th")

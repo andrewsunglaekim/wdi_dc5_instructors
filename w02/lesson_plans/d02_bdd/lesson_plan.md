@@ -85,7 +85,7 @@ Prompt students.  Write on board.
 
 ---
 
-## Some backstory
+## Some backstory (5 min)
 
 - Test First
 - TDD
@@ -131,9 +131,11 @@ Note:
 Speed? Really?  I'm writing twice as much code.
 
 Compare manual testing
-New login page.
+New login page
   Add "remember me"
   Add "forgot my password"
+
+Compare time for repeated manual testing vs. fast, automated testing.
 
 ---
 
@@ -173,7 +175,6 @@ Use:
 ---
 
 ## Better Design? Why?
-
 
 - The spec, or test, is the first user of your code.
 - If your code is hard to test, that means it's hard to use.
