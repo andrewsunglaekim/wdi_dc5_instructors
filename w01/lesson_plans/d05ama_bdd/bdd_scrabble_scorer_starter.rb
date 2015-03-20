@@ -58,7 +58,9 @@
 # Z:10
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Our code goes here:
 
+# Returns the Scrabble Score for passed word.
 def scrabble_scorer(word)
   # correct this code to pass all specs
   nil

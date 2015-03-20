@@ -34,7 +34,9 @@ LETTER_VALUES = {
   }
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Our code goes here.
 
+# Returns the Scrabble Score for passed word.
 def scrabble_scorer(word)
   cleaned_word = word.to_s.strip.upcase
   score = 0
