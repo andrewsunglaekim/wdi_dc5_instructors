@@ -23,6 +23,7 @@ Prompt: What do you think happens to documentation today, as code changes quickl
 ---
 
 ### New bug?  
+
 - Write the specifications which identify what the program should be doing.
 - See that spec fail (red).
 - Write the code to fix it (green).
@@ -107,7 +108,7 @@ Or, more simply...
 
 Together, we decided that...
 
-while you could do the right thing when thinking about Tests,
+while you _could_ do the right thing when thinking about Tests,
 
 Thinking in terms of **behavior**
 
@@ -127,7 +128,7 @@ usually **leads** you in the right direction.
 
 Note:
 
-Speed really?  I'm writing twice as much code.
+Speed? Really?  I'm writing twice as much code.
 
 Compare manual testing
 New login page.
@@ -198,6 +199,12 @@ Create tests many times in one hour
 ---
 
 # I Do: Ordinal
+
+Note:
+
+Start with Pseudo Code
+I could keep writing pseudo code, that I might delete later... OR
+I could write documentation that lives on.
 
 ---
 
