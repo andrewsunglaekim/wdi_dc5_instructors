@@ -8,10 +8,10 @@
 
 # Note:
 # Run tests with:
-#  $ rspec bdd_ordinal_starter_spec.rb
+#  $ rspec bdd_ordinal_spec.rb
 #
 # Run code with:
-#  $ ruby bdd_ordinal_starter.rb 5 #=> 5th
+#  $ ruby bdd_ordinal.rb 5 #=> 5th
 
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>

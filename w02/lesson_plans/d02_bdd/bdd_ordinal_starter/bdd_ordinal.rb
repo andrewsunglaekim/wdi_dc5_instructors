@@ -5,12 +5,6 @@
 # ..
 # 10 -> 10th
 
-# Note:
-# Run tests with:
-#  $ rspec bdd_ordinal_starter_spec.rb
-#
-# Run code with:
-#  $ ruby bdd_ordinal_starter.rb 5 #=> 5th
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # Our code goes here.

@@ -1,3 +1,4 @@
+# require the file with the code we wrote
 require_relative 'bdd_ordinal_starter'
 
 RSpec.describe 'integer_to_ordinal' do
