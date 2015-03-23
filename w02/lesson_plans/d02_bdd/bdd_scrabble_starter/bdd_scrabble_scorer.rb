@@ -22,12 +22,12 @@
 # Important Help:
 # This file has the code and the specs together.
 # You can run the specs using
-#    $ rspec bdd_scrabble_scorer_starter_spec.rb
+#    $ rspec bdd_scrabble_scorer_spec.rb
 
 # Run the scorer, using:
-#    $ ruby bdd_scrabble_scorer_starter.rb any_word
+#    $ ruby bdd_scrabble_scorer.rb any_word
 #  e.g.:
-#    $ ruby bdd_scrabble_scorer_starter.rb street #=> 6
+#    $ ruby bdd_scrabble_scorer.rb street #=> 6
 
 # Scrabble(c) Letter Scores:
 # A: 1
