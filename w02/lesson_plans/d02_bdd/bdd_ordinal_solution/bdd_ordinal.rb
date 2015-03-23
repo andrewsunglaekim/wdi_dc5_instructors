@@ -8,6 +8,8 @@
 
 # Note:
 # Run tests with:
+#  $ rspec
+# OR
 #  $ rspec bdd_ordinal_spec.rb
 #
 # Run code with:
