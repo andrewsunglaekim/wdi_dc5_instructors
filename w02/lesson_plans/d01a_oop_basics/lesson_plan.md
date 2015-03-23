@@ -20,6 +20,19 @@ Delivery Tips:
 - Explain the use of self in Ruby
 - Explain the difference between local, instance and class variables
 
+
+### Why use OOP? - Think Pair Share
+
+Why use objects?
+
+- Why use Objects and Classes?
+  - Code reuse
+  - Modularity / interoperability
+  - Problem & Data modeling (translating a scenario into a solution)
+  - Managing complexity
+    - add a little formality up front so that things don't get too loosey-goosey
+      later on
+
 ## Framing
 
 - Our big concern is how do we structure our programs?
@@ -79,18 +92,6 @@ So to recap, objects:
 - In ruby, we define object templates known as a `class`
 - We create new objects from the class template using ClassName.new
 
-### Why use OOP? - Think Pair Share
-
-Why use objects?
-
-- Why use Objects and Classes?
-  - Code reuse
-  - Modularity / interoperability
-  - Problem & Data modeling (translating a scenario into a solution)
-  - Managing complexity
-    - add a little formality up front so that things don't get too loosey-goosey
-      later on
-
 ## Code!
 
 What are the objects in AMAco PDA?
@@ -108,6 +109,15 @@ What data?
   - favorite_food
 What behaviors?
   - info
+
+#### Topics to cover
+
+- Write setter and getter methods
+- Explain when and why you would use use attr_accessor
+- Define class and instance methods and explain the difference between the two
+- Explain the use of self in Ruby
+- Explain the difference between local, instance and class variables
+
 
 ### An Aside - Pry
 
@@ -157,6 +167,7 @@ What methods?
   - sleep
   - work
   - tell_a_joke
+
 
 
 # Lesson Plan - Review Notes
