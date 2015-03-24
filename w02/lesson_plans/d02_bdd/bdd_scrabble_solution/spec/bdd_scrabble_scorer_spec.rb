@@ -2,7 +2,7 @@
 #  $ rspec scrabble_scorer_spec.rb
 
 # require our library
-require_relative 'bdd_scrabble_scorer'
+require_relative '../bdd_scrabble_scorer'
 
 RSpec.describe 'scrabble_scorer' do
   it "scores zero for empty word" do

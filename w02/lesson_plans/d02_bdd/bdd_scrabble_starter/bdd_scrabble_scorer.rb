@@ -22,7 +22,9 @@
 # Important Help:
 # This file has the code and the specs together.
 # You can run the specs using
-#    $ rspec bdd_scrabble_scorer_spec.rb
+#    $ rspec
+# or
+#    $ rspec spec/bdd_scrabble_scorer_spec.rb
 
 # Run the scorer, using:
 #    $ ruby bdd_scrabble_scorer.rb any_word
