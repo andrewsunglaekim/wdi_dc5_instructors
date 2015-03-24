@@ -68,8 +68,6 @@ def scrabble_scorer(word)
   nil
 end
 
-#<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
 # score using the passed word
 passed_word = ARGV[0]
 score = scrabble_scorer(passed_word)

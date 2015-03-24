@@ -37,9 +37,6 @@ LETTER_VALUES = {
     N: 1, O: 1, P: 3, Q:10, R: 1, S: 1, T: 1, U: 1, V: 4, W: 4, X: 8, Y: 4, Z:10
   }
 
-#>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-# Our code goes here.
-
 # Returns the Scrabble Score for passed word.
 def scrabble_scorer(word)
   cleaned_word = word.to_s.strip.upcase
@@ -53,59 +50,8 @@ def scrabble_scorer(word)
   score
 end
 
-#<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-def should_run_specs?
-  $PROGRAM_NAME.end_with?('rspec') # we ran this file via `rspec`
-end
-
-unless should_run_specs?
-  # score using the passed word
-  passed_word = ARGV[0]
-  score = scrabble_scorer(passed_word)
-  puts "The word '#{passed_word}' scores: #{score}"
-  puts ""
-
-else
-  # run the specs
-
-  RSpec.describe 'scrabble_scorer' do
-    it "scores zero for empty word" do
-      expect(scrabble_scorer("")).to eql(0)
-    end
-
-    it "scores zero for nil" do
-      expect(scrabble_scorer(nil)).to eql(0)
-    end
-
-    it "scores the letter 'a' as 1" do
-      expect(scrabble_scorer('a')).to eql(1)
-    end
-
-    it "scores the letter 'f' as 4" do
-      expect(scrabble_scorer('f')).to eql(4)
-    end
-
-    it "scores a very short word" do
-      expect(scrabble_scorer('as')).to eql(1+1)
-    end
-
-    it "scores a simple word 'street'" do
-      expect(scrabble_scorer('street')).to eql(6) # 1+1+1+1+1+1
-    end
-
-    it "scores a complicated word 'quirky'" do
-      expect(scrabble_scorer('quirky')).to eql(22)
-    end
-  end
-
-  describe "bonus" do
-    it "scores zero for whitespace" do
-      expect(scrabble_scorer(" \t\n")).to eql(0)
-    end
-
-    it "is not case-sensitive" do
-      expect(scrabble_scorer("STReeT")).to eql(6)
-    end
-  end
-end
+# score using the passed word
+passed_word = ARGV[0]
+score = scrabble_scorer(passed_word)
+puts "The word '#{passed_word}' scores: #{score}"
+puts ""
