@@ -32,9 +32,9 @@ Prompt: What do you think happens to documentation today, as code changes quickl
 ### New bug?  
 
 - Write the specifications which identify what the program should be doing.
-- See that spec fail (red).
-- Write the code to fix it (green).
-- Review your changes for clarity (refactor).
+- See that spec fail.
+- Write the code to fix it.
+- Review your changes for clarity.
 
 ---
 
@@ -93,13 +93,17 @@ Prompt students.  Write on board.
 
 ---
 
-## Some backstory (5 min)
+## Some backstory
 
 - Test First
 - TDD
 - BDD
 
+
+
 Note:
+
+(5 min)
 
 Behavior Driven vs. Test Driven
 
@@ -108,6 +112,8 @@ Behavior Driven vs. Test Driven
 [Sapir-Whorf](http://en.wikipedia.org/wiki/Linguistic_relativity)
 
 > a language affects the ways in which its respective speakers conceptualize their world
+
+## ~
 
 Or, more simply...
 > language determines thought
@@ -128,10 +134,12 @@ Note:
 
 ## That said...
 
-## Do BDD or
-## Do TDD
-
-## Just...(TATFT)[google.com?q=TATFT]
+# Do BDD
+## or
+# Do TDD
+##~
+## Just make sure you...
+# [TATFT](https://google.com?q=TATFT)
 
 ---
 
@@ -213,7 +221,7 @@ Discuss testing in isolation, minimizing dependencies.  Respond to the pain.
 - Forward motion
 - Often done before you realize it.
 
-Note
+Note:
 
 Create tests many times in one hour
 
@@ -247,7 +255,7 @@ Change speed for terrain
 Setup:
 ```
 $ gem install rspec
-$ open ~/.rspec
+$ atom ~/.rspec
 ```
 
 Add these lines:
@@ -262,12 +270,14 @@ Add these lines:
 
 To run specs:
 ```
-$ rspec bdd_scrabble_scorer_starter_spec.rb
+$ rspec
+# or
+$ rspec spec/bdd_scrabble_scorer_spec.rb
 ```
 
 To run your scorer:
 ```
-ruby bdd_scrabble_scorer_starter.rb 11
+ruby bdd_scrabble_scorer.rb quirky #=> 22
 ```
 
 ---
@@ -278,7 +288,7 @@ ruby bdd_scrabble_scorer_starter.rb 11
 
 That sounds reasonable.  Almost.
 
-Note
+Note:
 
 My reply: _“How can you write code if you don't know what it is supposed to do?  Do you just type randomly until something works?"_
 
@@ -291,15 +301,16 @@ My reply: _“How can you write code if you don't know what it is supposed to do
 - Red, Green, (don't forget the) Refactor
 - Respond to the pain
 
-Note
+Note:
 
 Write the obvious specs
 
 ---
 
-## Exercises 1-4 in (testfirst.org/learn_ruby)[http://testfirst.org/learn_ruby]
+## Exercises 1-4 in [testfirst.org/learn_ruby](http://testfirst.org/learn_ruby)
 
 Remember:  
+
   - Test First
   - Comment out all the specs
   - Move forward one step at a time.
@@ -314,16 +325,18 @@ Introduce `let`, `context`
 
 ---
 
-## Questions
-
---
-
 ## Resources
 
 - Videos, now
-  - Jim Weirich: (Roman Numerals Kata via TDD)[https://www.youtube.com/watch?v=983zk0eqYLY]
-  - For you music lovers: (Has anybody seen my code?)[https://www.youtube.com/watch?v=vKrr7aXUc1E]
+  - Jim Weirich: [Roman Numerals Kata via TDD](https://www.youtube.com/watch?v=983zk0eqYLY)
+  - For you music lovers: [Has anybody seen my code?](https://www.youtube.com/watch?v=vKrr7aXUc1E)
 - Books, now
-  - (Extreme Programming Explained, Kent Beck)[http://www.amazon.com/Extreme-Programming-Explained-Embrace-Edition/dp/0321278658]
+  - [Extreme Programming Explained, Kent Beck](http://www.amazon.com/Extreme-Programming-Explained-Embrace-Edition/dp/0321278658)
 - Books, later
   - POODiR (Practical Object Oriented Development in Ruby), Sandi Metz
+
+Note:
+
+Quiz Questions:
+
+- TODO
