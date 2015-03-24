@@ -16,37 +16,33 @@
 #  $ ruby bdd_ordinal.rb 5 #=> 5th
 
 
-#>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-# Our code goes here.
-
 # Points of Interest
-# 1st, 2nd, 3rd, 4th..10th, 11th, 21st, 22nd, 23rd, 24th...
+# 1st, 2nd, 3rd, 4th..10th, 11th, 12th, 13th, 21st, 22nd, 23rd, 24th...
 
-def integer_to_ordinal(ordinalize_this)
-  return "" unless ordinalize_this.is_a?(Integer)
-  case ordinalize_this
-  when 1
-    ordinal = "st"
-    "#{ordinalize_this}#{ordinal}"
-  when 2
-    ordinal = "nd"
-    "#{ordinalize_this}#{ordinal}"
-  when 3
-    ordinal = "rd"
-    "#{ordinalize_this}#{ordinal}"
-  when 4..20
-    ordinal = "th"
-    "#{ordinalize_this}#{ordinal}"
-  when 21
-    ordinal = "st"
-    "#{ordinalize_this}#{ordinal}"
+def ordinal_suffix(number)
+  last_two_digits = number.abs % 100
+
+  if (11..13).include?(last_two_digits)
+     "th"
+  else
+    last_digit = number.abs % 10
+    case last_digit
+     when 1; "st"
+     when 2; "nd"
+     when 3; "rd"
+     else    "th"
+   end
   end
-
 end
 
-#<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+def integer_to_ordinal(number)
+  return "" unless number.is_a?(Integer)
+
+  "#{number}#{ordinal_suffix(number)}"
+end
 
 # score using the passed word
 passed_number = ARGV[0]
-as_ordinal = integer_to_ordinal(passed_number)
+as_ordinal = integer_to_ordinal(passed_number.to_i)
+
 puts "If you are in position (#{passed_number}), then you are the '#{as_ordinal}' player."
