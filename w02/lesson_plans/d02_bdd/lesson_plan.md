@@ -4,8 +4,15 @@
 
 ## Learning Objectives
 - Live and breath the BDD Mantra
-- Describe outside-in testing
-- List benefits of BDD
+- List benefits of BDD/TDD
+- Create simple specs using rspec
+- Set up and write RSpec tests using
+  - `describe`
+  - `before(:each)`, `before(:all)`
+  - `let`
+  - `expect`
+  - `to` and `not_to`
+  - `eql`, `eq`, `be`
 
 ---
 
@@ -79,6 +86,7 @@ Prompt students.  Write on board.
 
 ## Why?
 
+- Live Docs
 - Safety Net
 - Better Design
 - Speed
@@ -114,10 +122,22 @@ Thinking in terms of **behavior**
 
 usually **leads** you in the right direction.
 
+Note:
+
 ---
 
-## Benefits
+## That said...
 
+## Do BDD or
+## Do TDD
+
+## Just...(TATFT)[google.com?q=TATFT]
+
+---
+
+## Back to... Why?
+
+- Live Docs (Trust)
 - Safety Net (Trust)
 - Better Design (Focus, Reusable)
 - Speed (Focus, Rhythm)
@@ -144,7 +164,7 @@ Compare time for repeated manual testing vs. fast, automated testing.
 - Writing code *as fast as possible* isn’t necessarily the goal.  
 - We want **maintainable** code that answers our need.  
 
->I see tests as a Limiter, forcing your code to *earn* its place.  
+> I see tests as a Limiter, forcing your code to *earn* its place.
 
 ---
 
@@ -209,6 +229,9 @@ I could write documentation that lives on.
 
 rspec: describe, it
 
+Do I do it this small?
+Change speed for terrain
+
 ---
 
 ## Rhythm
@@ -261,21 +284,6 @@ My reply: _“How can you write code if you don't know what it is supposed to do
 
 ---
 
-# Two main patterns
-
-- Outside-In
-- Inside-Out
-
-Note
-
-Outside-In:
-  Start with the User Acceptance Tests.  This fails, forcing a slightly smaller test.  This fails.  After a few tests, you have the test that forces you to write or update a specific message.
-
-InsideOut:
-You know the lowest functionality that you need.  You write the test
-
----
-
 ## Advice for now
 
 - Keep it small
@@ -289,11 +297,33 @@ Write the obvious specs
 
 ---
 
+## Exercises 1-4 in (testfirst.org/learn_ruby)[http://testfirst.org/learn_ruby]
+
+Remember:  
+  - Test First
+  - Comment out all the specs
+  - Move forward one step at a time.
+
+---
+
+## Review pokearena specs
+
+Note:
+
+Introduce `let`, `context`
+
+---
+
+## Questions
+
+--
+
 ## Resources
 
 - Videos, now
-  - Jim Weirich: TDD
+  - Jim Weirich: (Roman Numerals Kata via TDD)[https://www.youtube.com/watch?v=983zk0eqYLY]
+  - For you music lovers: (Has anybody seen my code?)[https://www.youtube.com/watch?v=vKrr7aXUc1E]
 - Books, now
-  - Extreme Programming Explained, Kent Beck
+  - (Extreme Programming Explained, Kent Beck)[http://www.amazon.com/Extreme-Programming-Explained-Embrace-Edition/dp/0321278658]
 - Books, later
   - POODiR (Practical Object Oriented Development in Ruby), Sandi Metz
