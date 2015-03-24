@@ -16,7 +16,7 @@
 Saving state is one of the fundamentals of programming. Important for students to understand the concepts of domain modeling.
 
 #### Opening Framing
-Where are we now? We've done some basic ruby programming. We've learned about object oriented programming and learned a whole bunch of methods, But we don't have a way to persist our data. We need a way to save state.
+Where are we now? We've done some basic ruby programming. We've learned about object oriented programming and learned a whole bunch of methods, But we don't have a way to persist our data. We need a way to save state. ( 5m)
 
 
 *For the morning lesson we'll be doing a whole lot of talking and conceptualizing databases as a discussion*
