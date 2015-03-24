@@ -55,6 +55,9 @@ dictionary.add({"bang" => "the sound an explosion makes"})
 dictionary.add({"awesome" => "what your instructors are"})
 dictionary.add({"law and order" => "the best damn TV show that ever graced this world"})
 dictionary.add({"bat" => "winged spawn of satan"})
+puts dictionary.entries
+puts dictionary.keywords
 puts dictionary.find("ba")
 puts dictionary.include?("law and order")
+puts dictionary.include?("weird")
 puts dictionary.printable
