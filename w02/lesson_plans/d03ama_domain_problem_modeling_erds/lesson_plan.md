@@ -23,16 +23,15 @@ Where are we now? We've done some basic ruby programming. We've learned about ob
 ## Domain Modeling (30m)
 - When we talk about a problem or domain, we should start thinking in terms of nouns and verbs. The verbs are the methods in the program and the nouns are the objects of the program.
 
-### Turn and talk to your neighbor(10m)
-- communicate with your partner some examples of applications that they use, that utilize a database.
-- write students examples on whiteboard
-  - pick a couple to extrapolate and prod students about entities and attributes
-
-
 #### what are entities and attributes (3m)
 The long and short of it. Entities are a table in your database. And attributes are the pieces of data that are attached to individual elements of entities or tables.
 
 Visualize it as a person. Maybe a person named "Bob" would be an individual element of the people table in your database. And bob's attributes would be his age, name, and whatever else you want.
+
+### Turn and talk to your neighbor(10m)
+- communicate with your partner some examples of applications that they use, that utilize a database.
+- write students examples on whiteboard
+  - pick a couple to extrapolate and prod students about entities and attributes
 
 #### what is a relationship? (15m)
 - what do you guys think a relationship between entities are?(instructor led discussion 5m)
