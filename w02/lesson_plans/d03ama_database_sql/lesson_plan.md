@@ -106,7 +106,8 @@ There are lots, these are some of the ones we'll use
 - [Postgres docs]http://www.postgresql.org/docs/9.4/interactive/index.html
 - [style guide for SQL](http://leshazlewood.com/software-engineering/sql-style-guide/)
 
-First thing we want to do is setup Postgres the database management system we'll be using.(15m)
+## Using SQL
+First thing we want to do is setup Postgres, the database management system we'll be using.(15m)
 
 ```
 $ brew update
@@ -120,3 +121,18 @@ $ gem install pg
 ```
 
 If something goes wrong during the Homebrew installation, you can use [http://postgresapp.com/](http://postgresapp.com/) instead
+
+- First lets open up `psql`, which is the REPL we'll be using for Postgres. Which is the database management system we'll be using in this class.
+- if you type in `\l` now, you'll be able to see all of the databases that Postgres already has. You might see a couple of databases that Postgres creates internally.
+- To create our own database, we can type `CREATE DATABASE wdi;`
+- To do anything with this database we first need to connect to it by typing `\c wdi`
+
+### Creating a table
+- If we type `\d` we'll see there are no tables
+
+- Let's create a table:
+
+`CREATE TABLE students ( id SERIAL PRIMARY KEY, first_name TEXT NOT NULL, last_name TEXT NOT NULL, age INT NOT NULL, age INT NOT NULL );`
+
+- the format for each of the arguements for attributes is: `attribute_name TYPE_OF_FIELD CONSTRAINT1 CONSTRAINT2`
+- some of the popular constraints we'll be using is `PRIMARY KEY`, `NOT NULL`, `UNIQUE` [There are others...](http://www.postgresql.org/docs/8.1/static/ddl-constraints.html)
