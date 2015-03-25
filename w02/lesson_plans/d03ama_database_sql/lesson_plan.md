@@ -36,10 +36,13 @@ _Why do we need databases?_ (10m)
 
 ACID (10m)
 - atomicity
-  - states that database modifications must follow an all or nothing rule.
+  - states that database modifications must follow an all or nothing rule. updates cannot happen partially which potentially cause greater problems than rejecting the whole database transaction
+  - An example of atomicity is ordering an airline ticket where two actions are required: payment, and a seat reservation. The potential passenger must either:
+    - both pay for and reserve a seat; OR
+    - neither pay for nor reserve a seat.
 - consistency
-  - states that only valid data will be written to the database.
-- isoloation
+  - states that only valid data will be written to the database. Any transaction must only change affected data in allowed ways, must be valid according to all defined rules, like constraints.
+- isolation
   - requires that multiple transactions occuring at the same time not impact each others execution
 - durability
   - ensures that any transaction committed to the database will not be lost through the use of database backups and transaction logs
@@ -52,19 +55,18 @@ _How do we interact with databases?_(5m)
 - often programming languages will have an API or ORM that allows you to send the commands to the database
 - Other databases also have REPLs that interact directly with databases as well
 
-(5m)
-_What can databases do?_
+_What can databases do?_(5m)
 in a word CRUD
 - Create records of data
 - read records of data
 - update records of data
 - delete records of data
 
-### Relational Databases
+### Relational Databases(15m)
 - A large portion of databases people use daily are relatioinal databases, meaning they associate related pieces of data together even if they are store in different places
 - if you want to google it, you can google non relational databases or noSQL
 
-_How is a relational database typically organized?_
+_How is a relational database typically organized?_ (10m)
 - tables- each model or object type, has it's own table *introduce the term model*
   - columns are for attributes or fields of the content your storing
   - rows are individual records of data
@@ -73,7 +75,7 @@ _How is a relational database typically organized?_
 - normalized
   - essentially DRY applied to database schema. Normalized data means storing data in a semantically meaningful place, and only storing it once. We'll be going more heavily into this tomorrow when we venture deeper into relationships and associations.
 
-_Indexing_
+_Indexing_ (5m)
 - Why do you think its important to index our rows in our databases?
 - Dewey Decimal System analogy
   - if there was no system for organizing a library, what would i have to do to find the book I wanted.
@@ -132,7 +134,38 @@ If something goes wrong during the Homebrew installation, you can use [http://po
 
 - Let's create a table:
 
-`CREATE TABLE students ( id SERIAL PRIMARY KEY, first_name TEXT NOT NULL, last_name TEXT NOT NULL, age INT NOT NULL, age INT NOT NULL );`
+`CREATE TABLE students ( id SERIAL PRIMARY KEY, first_name TEXT NOT NULL, last_name TEXT NOT NULL, age INT NOT NULL, job TEXT);`
 
 - the format for each of the arguements for attributes is: `attribute_name TYPE_OF_FIELD CONSTRAINT1 CONSTRAINT2`
 - some of the popular constraints we'll be using is `PRIMARY KEY`, `NOT NULL`, `UNIQUE` [There are others...](http://www.postgresql.org/docs/8.1/static/ddl-constraints.html)
+
+### CRUD /w SQL
+#### Creating Records
+- `INSERT INTO students (first_name, last_name, age) VALUES ('andy', 'kim', 29);`
+
+#### Reading records
+- `SELECT * FROM students`
+- the `WHERE` clause
+  - To use the where clause, we need a field to compare, an operator specifying the type of comparison to be made, and a value that represents our criterion
+  - `SELECT * FROM students WHERE last_name = 'Shannon'`
+  - `SELECT * FROM students WHERE age >= 25`
+
+#### Updating Records
+- UPDATE students SET job = 'developer' WHERE name = 'andy';
+
+#### Deleting Records
+- DELETE FROM students WHERE age > 25;
+
+In Class Exercise: 30m
+
+
+##### TALK about SQL injection
+- SQL injection is one of the most dangerous and most prominent types of attacks on the web. It is also one of the easiest to stop.
+- SQL injection occurs when user input is not "sanitized" first, meaning it is possible for the user to type characters that are not properly escaped and can control the actual SQL itself
+- SQL injection allows malicious users to gain access to your database which has potentially private and valuable information about your users and your application, and then the hacker can even lock you out of the database
+- [funny comic about SQL injection](http://xkcd.com/327/)
+To prevent this, we can use prepared statements, like so:
+```
+conn.prepare('insert_student_statement', 'INSERT INTO students (first_name, last_name, age, ss_num) values ($1, $2, $3, $4)')
+conn.exec_prepared('insert_student_statement', [ 'Mikael', 'Davis', 25, 649204729 ])
+```
