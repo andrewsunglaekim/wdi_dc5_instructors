@@ -22,53 +22,36 @@
 # Important Help:
 # This file has the code and the specs together.
 # You can run the specs using
-#    $ rspec bdd_scrabble_scorer_starter_spec.rb
+#    $ rspec
+# or
+#    $ rspec bdd_scrabble_scorer_spec.rb
 
 # Run the scorer, using:
-#    $ ruby bdd_scrabble_scorer_starter.rb any_word
+#    $ ruby bdd_scrabble_scorer.rb any_word
 #  e.g.:
-#    $ ruby bdd_scrabble_scorer_starter.rb street #=> 6
+#    $ ruby bdd_scrabble_scorer.rb street #=> 6
 
 # Scrabble(c) Letter Scores:
-# A: 1
-# B: 3
-# C: 3
-# D: 2
-# E: 1
-# F: 4
-# G: 2
-# H: 4
-# I: 1
-# J: 8
-# K: 5
-# L: 1
-# M: 3
-# N: 1
-# O: 1
-# P: 3
-# Q:10
-# R: 1
-# S: 1
-# T: 1
-# U: 1
-# V: 4
-# W: 4
-# X: 8
-# Y: 4
-# Z:10
-
-#>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-# Our code goes here:
+LETTER_VALUES = {
+    A: 1, B: 3, C: 3, D: 2, E: 1, F: 4, G: 2, H: 4, I: 1, J: 8, K: 5, L: 1, M: 3,
+    N: 1, O: 1, P: 3, Q:10, R: 1, S: 1, T: 1, U: 1, V: 4, W: 4, X: 8, Y: 4, Z:10
+  }
 
 # Returns the Scrabble Score for passed word.
 def scrabble_scorer(word)
-  # correct this code to pass all specs
-  nil
-end
+  cleaned_word = word.to_s.strip.upcase
+  score = 0
+  return score if cleaned_word.empty?
 
-#<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  cleaned_word.chars.each do |letter|
+    score += LETTER_VALUES.fetch(letter.to_sym)
+  end
+
+  score
+end
 
 # score using the passed word
 passed_word = ARGV[0]
 score = scrabble_scorer(passed_word)
 puts "The word '#{passed_word}' scores: #{score}"
+puts ""
