@@ -15,6 +15,16 @@ Delivery Tips:
 
 ## Outline
 
+### Begin with a Review
+
+Review high-level aspects of DBs:
+  * DBs let us store and query data
+  * like spreadsheets - tables and columns
+  * table names are plural
+  * columns have a name, type, and constraints
+  * indexes give us speed when querying (book index example)
+  * CRUD - INS, SEL, UPD, DES
+
 ### One-to-many
 
 Consider/discuss a one-to-many relationship: books and authors.
@@ -75,15 +85,17 @@ SELECT * FROM books JOIN authors ON books.author_id = authors.id;
 SELECT * FROM books JOIN authors ON books.author_id = authors.id WHERE authors.nationality = 'United States of America';
 ```
 
-### EXERCISE: Books/Authors
+### EXERCISE: Books/Authors (One to Many)
 
 See prompt.md in ex_library
 
-## Many-to-Many
+## Many-to-Many Relationships
 
 Diagram a simple many-to-many relationship and explain the join table.
 
 Ask students to come up with an example of a many-to-many relationship. An example might be topics / categories to books.
+
+Instructor demos creating categories table in schema, and adding 2 categories and writing queries on them with books. Note that we won't be using these in the HW, we'll let rails take care of them.
 
 ## EXERCISE / HW: Apartment Building
 
