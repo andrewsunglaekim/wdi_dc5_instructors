@@ -1,6 +1,6 @@
-Homework 02-04
+# AMAco Realty Part 2 - Electric Boogaloo (Homework 02-04)
 
-#### Learning Objectives
+## Learning Objectives
 - Practice working with a relational database
 - Practice defining relationships between tables
   - one to many
@@ -17,13 +17,13 @@ You assignment tonight is to build a database representing AMAco's apartment bui
 Draw the ERD for Apartments, Buildings, Tenants, and Doormen. What relationship exists between these tables? Which tables should have a foreign key?
 __Take a picture of your ERD (from the whiteboard) and include it in your HW submission folder__
 
-###### Building
+###### Buildings
 - a building has a unique ID
 - a name
 - an address
 - a number of floors
 
-###### Apartment
+###### Apartments
 - an apartment has a unique id
 - a floor
 - a name
