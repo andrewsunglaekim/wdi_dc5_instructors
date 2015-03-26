@@ -48,6 +48,12 @@ __Take a picture of your ERD (from the whiteboard) and include it in your HW sub
 After establishing the proper relationships and drawing your ERDs create your database. Create your schema for all of the tables and load it into your database.
 
 #### Import Seed Data
+
+In your terminal, install the ffaker gem (not a typo):
+```
+$ gem instal ffaker
+```
+
 Take a look at the ruby seed file that was given, read through the code before you run it. Try to make sense of what it is doing. Run the ruby seed file in YOUR homework folder. Use the output to seed your database  .
 
 #### Advanced Queries
