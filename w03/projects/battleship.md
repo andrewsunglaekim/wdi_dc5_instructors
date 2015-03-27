@@ -14,22 +14,25 @@ Design a single-player game, played in the command line, in which you attempt to
 
 ## Gameplay
 
-- A 10 x 10 grid represents your "ocean".
-- At the beginning of the game, two 5 x 1 "ships" should be placed randomly on the grid.
-- The ships may be placed horizontally or vertically on the grid (not diagonally).
-- The ships must be unbroken -- one ship takes up 5 consecutive spaces, not 3 here and 2 there.
-- The ships will not move over the course of the game.
-- Each turn, the player may place a "torpedo" somewhere on the grid. 
-- If the space on the grid corresponds to a space occupied by a ship, the player scores a "hit".
-- If the player hits all the spaces occupied by a ship, the player "sinks" the ship.
-- The player wins when both ships have been sunk.
-- The player should not see the ships on the grid. However, the player should be able to see where (s)he placed torpedoes, and whether each torpedo was a hit or miss.
+- A 10 x 10 grid represents the player's "ocean".
+- At the beginning of the game, two 5 x 1 "ships" are placed randomly on the grid.
+- The ships may be placed horizontally or vertically on the grid (not diagonally), and are unbroken -- one ship takes up 5 consecutive spaces, not 3 here and 2 there.
+- The player cannot see the ships on the grid. The ships will not move over the course of the game.
+- Each turn, the player may place a "torpedo" somewhere on the grid. If the space on the grid corresponds to a space occupied by a ship, the player scores a "hit".
+- If the player hits all the spaces occupied by a ship, the player "sinks" the ship. The player wins when both ships have been sunk.
+
+## Requirements
+
+- The locations of the ships and torpedoes should be stored in a database.
+- The player should be able to clear the board and start a new game.
+- The player should be able to see their score and number of turns taken. 
+- The player should be able to see where (s)he placed torpedoes, and whether each torpedo was a hit or miss.
 
 ## Bonus
 
 - Set a maximum number of turns. If the player doesn't sink both ships within that number of turns, or have fewer remaining turns than there are remaining un-hit ship spaces, they lose.
 - Expand the grid beyond 10 x 10, and include more ships... maybe of different lengths!
-- Pimp out the user interface to be as visually-stunning as possible! The command line is great for rendering super-gorgeous text-based graphics.
+- Make the game's interface in the command line as visually-stunning as possible! Text-based art is encouraged.
 
 ## Mega-Bonus
 
