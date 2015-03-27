@@ -3,9 +3,9 @@
 ```
     dBBBBb dBBBBBb  dBBBBBBP dBBBBBBP dBP    dBBBP.dBBBBP   dBP dBP dBP dBBBBBb
        dBP      BB                                BP                        dB'
-   dBBBK'   dBP BB   dBP      dBP   dBP    dBBP   `BBBBb  dBBBBBP dBP   dBBBP' 
-  dB' db   dBP  BB  dBP      dBP   dBP    dBP        dBP dBP dBP dBP   dBP     
- dBBBBP'  dBBBBBBB dBP      dBP   dBBBBP dBBBBP dBBBBP' dBP dBP dBP   dBP      
+   dBBBK'   dBP BB   dBP      dBP   dBP    dBBP   `BBBBb  dBBBBBP dBP   dBBBP'
+  dB' db   dBP  BB  dBP      dBP   dBP    dBP        dBP dBP dBP dBP   dBP
+ dBBBBP'  dBBBBBBB dBP      dBP   dBBBBP dBBBBP dBBBBP' dBP dBP dBP   dBP
 ```
 
 In addition to being an expert programmer, you're now the Grand Admiral of the High Seas!
@@ -23,9 +23,9 @@ Design a single-player game, played in the command line, in which you attempt to
 
 ## Requirements
 
-- The locations of the ships and torpedoes should be stored in a database.
+- The player should be able to quit the command line and resume their game later.
 - The player should be able to clear the board and start a new game.
-- The player should be able to see their score and number of turns taken. 
+- The player should be able to see their score and number of turns taken.
 - The player should be able to see where (s)he placed torpedoes, and whether each torpedo was a hit or miss.
 
 ## Bonus
