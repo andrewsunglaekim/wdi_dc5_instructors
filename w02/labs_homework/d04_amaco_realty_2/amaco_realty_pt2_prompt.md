@@ -1,4 +1,4 @@
-# AMAco Realty Part 2 - Electric Boogaloo (Homework 02-04)
+# AMAco Realty Part 2 - Electric Boogaloo
 
 ## Learning Objectives
 - Practice working with a relational database
