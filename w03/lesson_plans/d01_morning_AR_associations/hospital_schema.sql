@@ -1,0 +1,29 @@
+
+
+
+CREATE TABLE doctors(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE patients (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  sex VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE appointments(
+  id SERIAL PRIMARY KEY,
+  time VARCHAR(100) NOT NULL,
+  patient_id INTEGER NOT NULL,
+  doctor_id INTEGER NOT NULL
+);
+
+CREATE TABLE skills(
+    id SERIAL PRIMARY KEY,
+    type VARCHAR(100) NOT NULL,
+    yrs_of_exp INTEGER NOT NULL,
+    doctor_id INTEGER NOT NULL
+);
