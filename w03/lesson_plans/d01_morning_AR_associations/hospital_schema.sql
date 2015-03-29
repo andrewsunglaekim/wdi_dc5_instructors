@@ -1,4 +1,7 @@
-
+DROP TABLE IF EXISTS doctors;
+DROP TABLE IF EXISTS patients;
+DROP TABLE IF EXISTS appointments;
+DROP TABLE IF EXISTS skills;
 
 
 CREATE TABLE doctors(
@@ -23,7 +26,7 @@ CREATE TABLE appointments(
 
 CREATE TABLE skills(
     id SERIAL PRIMARY KEY,
-    type VARCHAR(100) NOT NULL,
+    specialty VARCHAR(100) NOT NULL,
     yrs_of_exp INTEGER NOT NULL,
     doctor_id INTEGER NOT NULL
 );
