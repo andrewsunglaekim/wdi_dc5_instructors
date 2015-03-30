@@ -140,6 +140,7 @@ Lets go ahead and create some records(have schema file open and pry open side by
   - `patient.appointments`
   - `doctor.appointments`
   - `patient.doctors[0].skills`
+  - `skill.doctor =`
 
   Push Code up so they can do next exercise
 
