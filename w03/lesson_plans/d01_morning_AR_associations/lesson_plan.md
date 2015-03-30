@@ -121,6 +121,28 @@ Lets go ahead and create some records(have schema file open and pry open side by
 - do adam.students.create({name: "Noah", email: "noah@email.com"})
 - briefly explain how to create seed file?
 
+```ruby
+require_relative 'lib/instructor'
+require_relative 'lib/student'
+
+Instructor.destroy_all
+Student.destroy_all
+
+instructors = Instructor.create([
+  {name: "Adam", email: "adam@email.com"},
+  {name: "Matt", email: "matt@email.com"},
+  {name: "Andy", email: "andy@email.com"}
+])
+
+students = Student.create([
+  # {name: "Jocelyn", email: "jocelyn@email.com", instructor_id: instructors[0].id},
+  # {name: "Don", email: "don@email.com", instructor_id: instructors[1].id},
+  # {name: "Phil", email: "phil@email.com", instructor_id: instructors[2].id}
+])
+
+```
+
+
 
 ## Break 10m
 
@@ -134,11 +156,13 @@ Lets go ahead and create some records(have schema file open and pry open side by
 - show active record `app.rb` file
 - go into pry and show:
   - `doctor.patients`
-  - `doctor.skills`
+  - `doctor.patients`
+  - `doctor.skills << skill`
   - `patient.doctors`
   - `patient.appointments`
   - `doctor.appointments`
   - `patient.doctors[0].skills`
+  - `skill.doctor =`
 
   Push Code up so they can do next exercise
 
