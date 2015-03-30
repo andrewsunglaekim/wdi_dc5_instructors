@@ -26,7 +26,7 @@ class Appointment < ActiveRecord::Base
 end
 
 class Skill < ActiveRecord::Base
-
+	belongs_to :doctor
 end
 
 binding.pry
