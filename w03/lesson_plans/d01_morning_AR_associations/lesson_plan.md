@@ -134,7 +134,8 @@ Lets go ahead and create some records(have schema file open and pry open side by
 - show active record `app.rb` file
 - go into pry and show:
   - `doctor.patients`
-  - `doctor.skills`
+  - `doctor.patients`
+  - `doctor.skills << skill`
   - `patient.doctors`
   - `patient.appointments`
   - `doctor.appointments`
