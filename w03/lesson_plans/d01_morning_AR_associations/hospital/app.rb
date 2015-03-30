@@ -11,7 +11,7 @@ ActiveRecord::Base.establish_connection(
 
 class Doctor < ActiveRecord::Base
   has_many :appointments, dependent: :destroy
-  has_many :skills
+  has_many :skills, dependent: :destroy
   has_many :patients, through: :appointments
 end
 
@@ -26,7 +26,7 @@ class Appointment < ActiveRecord::Base
 end
 
 class Skill < ActiveRecord::Base
-  belongs_to :doctor
+
 end
 
 binding.pry
