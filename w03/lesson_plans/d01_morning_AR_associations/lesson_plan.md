@@ -2,28 +2,58 @@
 
 ## Learning Objectives
 ### Concepts
-- explain what makes associations programmatically powerful
-  - how they make common operations simpler
-  - how they make it easier to code once associations are established
+- explain the purpose of associations in ActiveRecord (AR)
+- how they make common operations simpler
+- how they make it easier to code once associations are established
 
 ### Mechanics
-#### In ActiveRecord be able to:
-- write the syntax for one to many associations
-- write the syntax for many to many associations
-- utilize associations in order to perform CRUD more efficiently
-
+- use the common AR helper methods to manage associations (CRUD)
+  - belongs_to
+    - .author     - returns the associated author object
+    - .author =   - sets the associated author object
+    - .create_author  
+  - has_many
+    - .books      - returns the list of associated books objects
+    - .books =    - overwrites the list of associated books
+    - .books <<   - adds to the associated list of books
+    - .books.create  - creates a new book associated with the author called on
+- explain the purpose of `dependent: destroy`
 
 ## Opening Framing
-So, we have this neat little tool that allows us to write SQL more efficiently for us. It turns out, that neat little tool is even more powerful then you think. Do you guys remember all of those relationships we drew on the board when we first learned about data bases?
 
-Why do you think we did that? Specifically what do you guys think relationships provide us programmatically? PKI (5m)
-- write on the board students' thoughts about relationships and what kind of programmatic access we can get from relationships(associations)
+We've seen the power of AR record in terms of writing SQL for us (providing a
+better  interface to the DB). As we saw on Fri, that power extendeds to  
+expressing / managing relationships (i.e. the ones in our ERDs). Every program
+we'll ever write has relationships between models/entities.
 
+Object Composition - objects made out of / associated with other objects
+(car/engine or trainer/pokemon example)
+
+Associations are just a way to represent relationships between different objects
+in code.
+
+### Think-Pair-Share
+
+**Given what we know about how AR worked with single objects, what feature do
+you think AR should / would provide for associations?**
+
+Write student responses on the board.
+
+Expected answers:
+- declare the nature of the relationships between entities (models) (1:1, many-many)
+- get asssociated objects
+- modify (add /remove associations)
+- create objects based on associations
+
+Write the list of commons methods given by AR to manage associations and define
+each one.
+
+## AR Association Features
 
 ## I do- lecture (10m)
 
 Let's take facebook for example:
-- What do you think is happening when a user creates a post on facebook?
+- What do you think the code looks like for a user creating a post on facebook?
   - do you think it queries the database for a user or user_id then creates a post passing in those parameters?
   - wouldn't it be nice if programmatically, a post is created like we think of it in english?
   - Wouldn't it also be nice, if there was a quick method or function we could use to access all of a user's posts, comments, photos, friends, messages, likes

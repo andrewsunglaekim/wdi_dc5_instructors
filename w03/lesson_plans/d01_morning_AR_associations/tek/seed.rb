@@ -1,4 +1,6 @@
-require_relative './app.rb'
+require_relative 'lib/instructor'
+require_relative 'lib/student'
+
 Instructor.destroy_all
 Student.destroy_all
 
