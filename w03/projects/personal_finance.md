@@ -33,6 +33,6 @@ see the total 'cost' of transactions in that category.
 ## Bonus
 
 * Allow filtering by date
-* Support tracking multiple accounts, which have many transactions (a given
+* Support tracking multiple accounts (i.e. checking / savings), which have many transactions (a given
   transaction only belongs to one account)
 * Other ideas you think would be useful!
