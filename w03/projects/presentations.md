@@ -1,6 +1,6 @@
 # Project 1 Presentations
 
-These aren't really presentations. The format's almost exactly the same format as the "meet and greet" where GA grads meet with prospective employers. (But without the prospective employers... just WDI students.)
+These aren't really presentations. The format's almost exactly the same as the "meet and greet" where GA grads meet with prospective employers. (But without the prospective employers... just WDI students.)
 
 ### The structure
 
