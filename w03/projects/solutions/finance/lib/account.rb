@@ -6,6 +6,10 @@ class Account < ActiveRecord::Base
     self.transactions.create({transaction_type: "deposit", amount: amount})
   end
 
+  def withdraw amount
+    self.transactions.create({transaction_type: "withdraw", amount: amount})
+  end
+
   def balance
     if self.transactions.count == 0
       0
@@ -15,11 +19,7 @@ class Account < ActiveRecord::Base
       deposit_amounts - withdraw_amounts
     end
   end
-
-  def withdraw amount
-    self.transactions.create({transaction_type: "withdraw", amount: amount})
-  end
-
+  
   def account_menu
     system("clear")
     puts "What would you like to do?"
