@@ -10,14 +10,11 @@ Delivery Tips:
 
 ## LEARNING OBJECTIVES
 
-* Understand that software and protocols are designed by humans and have trade-
-  offs
 * Define a "communication protocol" in reference to computer communications
-* Name the four basic parts of the Internet protocol suite (the TCP/IP stack),
-  and illuminate us as to their purposes.
-* Explain the purpose of having a protocol "stack."
-* Describe the basics of the HTTP protocol, and explain what an HTTP Request is
+* Name the four basic parts of the Internet protocol suite (the TCP/IP 'stack')
+* Explain the purpose of having a protocol stack.
 * Explain the client-server model
+* Describe the basics of the HTTP protocol, and explain what an HTTP Request is
 * Explain the difference between GET and POST and when you would use each (in
   the common mode).
 * Describe, in simple terms, the premise of REST.
@@ -39,6 +36,12 @@ Are there rules about how and when we say things?
 
 ## Communication Protocols
 
+### Write-Pair-Share - Protocols
+
+2 minutes writing - what is a protocol and why do we have them?
+2 minutes discussion
+2 minutes sharing out
+
 Communicating systems use well-defined formats for exchanging messages. Each
 message has an exact meaning intended to provoke a particular response of the
 receiver.
@@ -58,6 +61,8 @@ Communications protocols have to be agreed upon by the parties **involved**.
 To reach agreement a protocol may be developed into a technical **standard**.
 
 ### Example
+
+Ask for examples of a protocol.
 
 **Formal Introductions**:
   * Person Introduces less senior to more senior, including full name and
@@ -95,8 +100,15 @@ Example: Nerdiest joke I know...
 
 ## Exercise - Designing the Internet
 
-See [Max's Lesson on WDI Lounge](http://lounge.ga-instructors.com/t/designing-t
-he-internet-an-early-exercise-that-went-really-well/78)
+Hand out index cards, and give students 15-20 minutes to come up with a protocol
+for transmitting messages.
+
+Think about:
+* Reliability: He cannot guarantee that every message will be delivered successfully.
+* Order: He cannot guarantee delivered messages will arrive in the same order that they were sent.
+* Integrity: He cannot guarantee that all messages will arrive in their entirety.
+* Recipient: He cannot guarantee that messages will always be delivered to the correct recipient.
+
 
 ## TCP/IP Stack (the Internet protocol suite)
 
