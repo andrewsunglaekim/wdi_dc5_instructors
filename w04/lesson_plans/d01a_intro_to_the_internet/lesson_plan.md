@@ -214,6 +214,8 @@ HTTP in depth:
 HTTP/1.1 200 OK
 Content-Type: text/html
 Content-Length: 6
+
+Hello
 ```
 
 ### URL BREAKDOWN!
