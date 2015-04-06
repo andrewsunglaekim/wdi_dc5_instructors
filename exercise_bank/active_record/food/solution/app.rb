@@ -1,18 +1,10 @@
-### Needs some refactoring and cleaning up but this works so far!
-
 require 'active_record'
 require 'pry'
-require_relative 'models/fridge'
-require_relative 'models/food'
-require_relative 'models/drink'
 
-ActiveRecord::Base.establish_connection(
-  :adapter => "postgresql",
-  :host => "localhost",
-  :username => "wdi",
-  :password =>  "",
-  :database => "fridge_db"
-  )
+require_relative 'db/connection'
+require_relative 'lib/fridge'
+require_relative 'lib/food'
+require_relative 'lib/drink'
 
 def get_fridge
   puts "Which fridge?"
@@ -54,6 +46,7 @@ def get_food_input
   food_attr[:weight] = gets.chomp
   puts "Is it vegan?"
   food_attr[:is_vegan] = gets.chomp
+  food_attr[:enter_time] = Time.now
   return food_attr
 end
 
@@ -84,11 +77,11 @@ def menu
   return gets.chomp
 end
 
-begin
+loop do
 
   choice = menu
   case choice
-    
+
   when "1"
     puts Fridge.all
   when "2"
@@ -127,6 +120,7 @@ begin
     fridge = get_fridge
     drink = get_drink(fridge)
     drink.destroy
+  when "11"
+    break
   end
 end
-end while choice != "11"

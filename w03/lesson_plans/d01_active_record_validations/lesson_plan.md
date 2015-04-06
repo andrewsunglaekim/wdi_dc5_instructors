@@ -20,21 +20,31 @@ Delivery Tips:
 
 ## Outline
 
+### Think Pair Share
+
+Why put validations in our model vs in our UI code?
+What are the differences between AR validations and SQL constraints?
+
+### Validations Basics
+
 **I do**
 
 * Conceptual talk about AR Validations
 * Presence validation demo in Rails console
+  * .save vs save! return values
+    * also create and update
   * .valid?
-  * .save return values
   * .errors
     * .messages
     * .full_messages
 
 **We do**
 
+Add validations to AR objects in ex_lib.
 
 **You do**
 
+Add 3 more validations.
 
 # Lesson Plan - Review Notes
 

@@ -3,6 +3,6 @@ class Fridge < ActiveRecord::Base
   has_many :drinks, dependent: :destroy
 
   def to_s
-    return location
+    return "Location: #{location} Brand: #{brand}"
   end
 end
