@@ -3,7 +3,7 @@ This quiz will be a general assessment of your ability to implement code we've g
 - Do all parts of the quiz in one rb file.
 - submit rb file through a gist
   - create a gist of your work
-  - submit link to the gist as an issue in the class notes repo
+  - submit link to the gist as an issue in the [class notes repo](https://github.com/ga-students/wdi_dc5/issues)
 
 ### Enumeration
 Given the following code:
