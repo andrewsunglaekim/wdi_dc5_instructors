@@ -6,7 +6,7 @@
 - run the seed file
 
 ## Exercise
-- You should be able to run `bundle exec ruby app.rb`.
+- Once finished with the exercise, you should be able to run `bundle exec ruby app.rb`.
   - It should not error out
   - It should puts to the screen certain strings prescribed in the comments of `app.rb`
   - You should be using enumerables for iterating over collections
