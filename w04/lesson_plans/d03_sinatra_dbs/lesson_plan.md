@@ -66,4 +66,5 @@ Delete
 end
 ```
 
-## You do, update your blog application to have create update and delete functionality through RESTful resources. Test with postman
+## You do (25m)
+- update your blog application to have create update and delete functionality through RESTful resources. Test with postman
