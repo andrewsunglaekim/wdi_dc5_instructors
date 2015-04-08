@@ -19,11 +19,17 @@ class Board < ActiveRecord::Base
     case orientation
     when :horizontal
       num_cells.times do |offset|
+        return false if ship_at(x, y + offset)
+      end
+      num_cells.times do |offset|
         current_cell = cell_at(x, y + offset)
         current_cell.ship = ship
         current_cell.save
       end
     when :vertical
+      num_cells.times do |offset|
+        return false if ship_at(x + offset, y)
+      end
       num_cells.times do |offset|
         current_cell = cell_at(x + offset, y)
         current_cell.ship = ship
