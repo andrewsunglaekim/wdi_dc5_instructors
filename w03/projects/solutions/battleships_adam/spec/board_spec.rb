@@ -43,4 +43,10 @@ describe Board do
     expect(atlantic.ship_at(1,4)).to eq(nil)
   end
 
+  it "can fire torpedos at a specific cell" do
+    atlantic.fire_torpedo_at(1,1)
+    target_cell = atlantic.cell_at(1,1)
+    expect(target_cell.hit).to eq(true)
+  end
+
 end

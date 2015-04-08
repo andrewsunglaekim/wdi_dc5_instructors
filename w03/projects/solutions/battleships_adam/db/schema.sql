@@ -16,6 +16,7 @@ CREATE TABLE cells(
   id SERIAL PRIMARY KEY,
   row_num INTEGER NOT NULL,
   column_num INTEGER NOT NULL,
+  hit BOOLEAN DEFAULT FALSE,
   board_id INTEGER REFERENCES boards(id),
   ship_id INTEGER REFERENCES ships(id)
 );

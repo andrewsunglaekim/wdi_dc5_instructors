@@ -42,4 +42,8 @@ class Board < ActiveRecord::Base
   def ship_at(x,y)
     cell_at(x,y).ship
   end
+
+  def fire_torpedo_at(x,y)
+    cell_at(x,y).hit_with_torpedo
+  end
 end
