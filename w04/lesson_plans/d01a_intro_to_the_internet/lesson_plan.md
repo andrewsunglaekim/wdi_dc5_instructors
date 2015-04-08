@@ -225,9 +225,9 @@ HTTP in depth:
 ```
 HTTP/1.1 200 OK
 Content-Type: text/html
-Content-Length: 6
+Content-Length: 62
 
-Hello
+<h1>Bill?</h1><img src="http://www.fillmurray.com/300/300" />
 ```
 
 ### URL BREAKDOWN!
