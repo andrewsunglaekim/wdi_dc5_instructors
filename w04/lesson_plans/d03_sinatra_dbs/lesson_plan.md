@@ -5,7 +5,7 @@
 - use Active Record on Sinatra app
 - execute CRUD functionality with Sinatra
   - executes RESTful routes
-  - execute POST request through google postman
+  - execute POST, PUT, DELETE request through google postman
 - create a Sinatra App with Active Record
 
 ## Opening Framing
