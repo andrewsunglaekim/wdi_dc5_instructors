@@ -3,16 +3,17 @@
 
 ## Learning Objectives
 ### Concepts
-- Abstract HTML out of your main Sinatra file and into a template.
 - Explain what ERB is and why we use it.
+- Explain the convention over configuration in relation to Sinatra.
 
 ### Mechanics
 - Use ERB to execute Ruby code in the view templates.
-- Explain the convention over configuration in relation to Sinatra views.
+  - <% %>
 - Pass a variable from the main Sinatra file and use it in a view.
 - Use a layout view file to set a common theme for all your views.
 - Explain what yield does in regards to a layout views.
 - Override a default layout with a specific layout.
+
 
 #### Opening Framing
 Let's check out a popular website.
