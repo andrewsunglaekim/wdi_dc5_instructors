@@ -1,0 +1,10 @@
+<h3><%= @artist.name %></h3>
+from <%= @artist.nationality %>
+<br/>
+
+<img src="<%= @artist.photo_url %>">
+
+
+<form action="/artists/<%= @artist.id %>/delete" method="post">
+  <input type="submit" value="Delete Artist">
+</form>

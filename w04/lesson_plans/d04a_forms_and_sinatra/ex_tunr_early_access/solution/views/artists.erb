@@ -1,0 +1,14 @@
+<h3>Artists</h3>
+<p>Here's who YOU have asked to see on Tun.r.</p>
+<% @artists.each do |artist| %>
+  <li><%= artist %></li>
+<% end %>
+
+<p>Contribute to this list</p>
+<form action="/artists" method="post">
+  <label>
+    Artist
+    <input type="text" name="artist_name">
+  </label>
+  <input type="submit" value="Add Artist">
+</form>
