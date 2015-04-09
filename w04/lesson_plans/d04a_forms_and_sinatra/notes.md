@@ -6,51 +6,29 @@ Delivery Tips:
 * Revisit LOs
 * Defer questions when appropriate
 
-# Sinatra
+# Sinatra Forms
 
 ## Learning Objectives
 
-### Sinatra Views and Forms
-
-#### Concepts
-
-* Explain the different roles of HTML, CSS & JavaScript
-
-#### Mechanics
-
-* Use ERB templates to create dynamic pages and render views
-* Utilize forms to allow users to send information to the server
+* Explain the general structure of a form
+* Define the purpose of the 'action' and 'method' attributes of a form
+* Explain how inputs and their names map to params in sinatra
+* List common HTML inputs and their purposes
+* Differentiate how data is sent in a 'post' form vs a 'get' form
+* Write forms that submit data to a sinatra app
+* Write forms that use nested parameters
 
 ## Outline
 
-### TunR Information Page
+We clearly see the need for forms in our apps, right? Right.
 
-**You Do**
+### Forms Structure
 
-* Create a Sinatra application called `tunr_app`
-* Set up the following routes
-  * GET '/' - Welcome to Tun.r
-  * GET '/about' - Information about HAMCo and Tun.r
-  * GET '/songs' - List some songs and say that they will be available soon
-  * GET '/artists' - List some artists and say that their music will be available soon
+**I do**
 
-**We Do**
+Discuss the role of forms:
 
-* Make a view for the home page
-
-**You do**
-
-* Make views for the other pages
-
-**We do**
-
-* DRY with layout.erb
-
-### Forms and POST requests
-
-**We do**
-
-* Forms carry POST data
+* Forms submit structured data
 	* action: path
 	* method: verb
 * Inputs are the fields to enter data
@@ -59,16 +37,63 @@ Delivery Tips:
 * Data gets put into `params` hash
 * Post some data with a POST request and view it
 
-**We do**
+Explain the of a form
+```html
+<form action="/todos" method="post">
+  <label>Description:</label>
+  <input name="description">
 
-* Add an 'early access' list on the home page, with a form to put yourself on that list
+  <input type="submit" value="Create">
+</form>
+```
 
-**You do**
+**We Do**
 
-* Add song titles to the song page - "What songs would you like to listen to?"
-* Add artists names to the artists page - "What artists would you like to see?"
+Add a 'new' form to the TODO app.
+
+**You Do**
+
+Add a 'new' form to your blog app.
+
+### Think Pair Share - What's different about an edit form and the update action?
+
+Ans: prepopulated, includes an ID, PUT method.
+
+**I do**
+
+Demonstrate a bare-bones form that has a put method
+
+```html
+<form method="post" action="?????">
+	<input type="hidden" name="_method" value="put"/>
+	...
+</form>
+```
+
+**You Do**
+
+* Add an 'edit' form to the Todo app.
+* Reconvene
+* Add an 'edit form to the blog app.
+
+## GET forms
+
+*I do*
+Create a `get` form that searches todos. Reuse index view.
+
+Note the difference in how params are sent.
+
+### TPS - Why are get forms put in url query string?
+
+**You Do**
+Add a search form to the blog
+
+## Nested Params
+
+Demonstrate nested params. Why do we do this? Namespacing.
 
 # Lesson Plan - Review Notes
+
 
 Are learning objectives present and complete?
 What is the ratio of talking vs. doing? (60/40, TT/ST-wg vs ST-sg / individual)
