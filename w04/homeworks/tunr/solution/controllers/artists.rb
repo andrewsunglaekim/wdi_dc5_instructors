@@ -21,18 +21,6 @@ get "/artists/:id" do
   erb(:"artists/show")
 end
 
-# edit
-get "/artists/:id/edit" do
-  @artist = Artist.find(params[:id])
-  erb(:"artists/edit")
-end
-
-# update
-put "/artists/:id" do
-  @artist = Artist.update!(params[:artist])
-  redirect("/artists/#{@artist.id}")
-end
-
 # destroy
 post "/artists/:id/delete" do
   @artist = Artist.find(params[:id])

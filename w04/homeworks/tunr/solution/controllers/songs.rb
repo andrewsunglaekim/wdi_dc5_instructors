@@ -21,18 +21,6 @@ get "/songs/:id" do
   erb(:"songs/show")
 end
 
-# edit
-get "/songs/:id/edit" do
-  @song = Song.find(params[:id])
-  erb(:"songs/edit")
-end
-
-# update
-put "/songs/:id" do
-  @song = Song.update!(params[:song])
-  redirect("/songs/#{@song.id}")
-end
-
 # destroy
 post "/songs/:id/delete" do
   @song = Song.find(params[:id])
