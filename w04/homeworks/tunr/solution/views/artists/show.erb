@@ -2,8 +2,11 @@
 <h3><%= @artist.nationality %></h3>
 <img src="<%= @artist.photo_url %>">
 
+<h3>Songs</h3>
 <ul>
   <% @artist.songs.each do |song| %>
-    <li><%= song.title %></li>
+    <li>
+      <a href="/songs/<%= song.id %>"><%= song.title %></a>
+    </li>
   <% end %>
 </ul>
