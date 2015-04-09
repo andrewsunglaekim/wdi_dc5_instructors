@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader'
-require 'active_record'
+
+require_relative 'db/connection'
 
 # Load specific routes
 require_relative 'controllers/artists'
@@ -10,11 +11,6 @@ require_relative 'controllers/songs'
 require_relative 'models/artist'
 require_relative 'models/song'
 
-# Load Active Record and connect to the DB
-ActiveRecord::Base.establish_connection({
-  database: 'tunr_db',
-  adapter: 'postgresql'
-})
 
 # Fix an issue with sinatra and Active Record where connections are left open
 after do
