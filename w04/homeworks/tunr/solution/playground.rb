@@ -9,6 +9,5 @@ ActiveRecord::Base.establish_connection({
 # models
 require_relative 'models/artist'
 require_relative 'models/song'
-require_relative 'models/playlist'
 
 binding.pry
