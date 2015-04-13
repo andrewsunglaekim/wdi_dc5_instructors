@@ -31,7 +31,6 @@ questions in your PR description, we'll use those to focus our feedback.
 * Explain the structure of a rails application (folders & files)
 * Create a new Ruby on Rails application
 * Create a Rails App with a RESTful interface
-* Use a 'gemfile' to define the gem dependencies of our application
 * Follow Rails naming conventions when creating models, views and controllers
 
 ## Outline
