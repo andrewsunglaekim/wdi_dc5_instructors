@@ -1,0 +1,12 @@
+{
+  "description": "This lesson introduces the MCV paradigm by whiteborading the concepts of what our app did in Sinatra, and then porting it to the Rails conventions.",
+  "contents": {
+    "i_do": ["Whiteboard MVC, port one part of a Sinatra app to Rails."],
+    "we_do": ["Port an additional feature of a Sinatra app to Rails."],
+    "you_do": ["Port one last feature to Rails, add features by reading docs."]
+  },
+  "technologies": ["active record", "rails", "sinatra", "migrations"],
+  "resources": [],
+  "lesson_id": "6a6cc9f5-cbb1-421a-86b5-1dcfeb35674e",
+  "objective": "Intro to Rails"
+}
