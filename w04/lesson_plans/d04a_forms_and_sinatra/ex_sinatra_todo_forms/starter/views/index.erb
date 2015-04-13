@@ -1,0 +1,3 @@
+<% @todos.each do |todo| %>
+<p><a href='/todos/<%= todo.id %>'><%= todo.description %> | <%= todo.completed %></a></p>
+<% end %>
