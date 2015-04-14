@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tun.r</title>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= javascript_include_tag 'application'%>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header id="page-header">
+    <span class="logo">Tun.r</span>
+    <ul class="nav">
+      <li><a href="/songs">Song Library</a></li>
+      <li><a href="/artists">Artists</a></li>
+      <li><a href="/artists/new">Add Artist</a></li>
+    </ul>
+  </header>
+
+  <%= yield %>
+
+</body>
+</html>

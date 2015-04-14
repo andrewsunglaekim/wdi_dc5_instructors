@@ -1,0 +1,12 @@
+{
+  "description": "Fresh from link helpers, we're going to add form helpers to Tun.r",
+  "contents": {
+    "i_do": [],
+    "we_do": [],
+    "you_do": []
+  },
+  "technologies": ["ruby", "postgresql", "activerecord", "rails"],
+  "resources": [],
+  "lesson_id": "da807caf-ef2d-4ba8-8ec1-14db3b972772",
+  "objective": "Utilize form helpers to generate forms in a rails application"
+}

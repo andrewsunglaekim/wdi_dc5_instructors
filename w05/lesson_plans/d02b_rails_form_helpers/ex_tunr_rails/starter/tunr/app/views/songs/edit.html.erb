@@ -1,0 +1,12 @@
+<h2>Edit Song</h2>
+
+<form action="/songs/<%= @song.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <label for="title">Title:</label>
+  <input name="title" value="<%= @song.title %>">
+
+  <label for="price">Price (cents):</label>
+  <input name="price" value="<%= @song.price %>">
+
+  <input type="submit" value="Edit">
+</form>
