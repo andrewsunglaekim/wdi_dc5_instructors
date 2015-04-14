@@ -27,8 +27,8 @@
 
 <h2>New Song</h2>
 
-<form class="new-song" action="/artists/<%= @artist.id %>/songs" method="post">
-  <!-- <input type="hidden" name="artist_id" value="<%= @artist.id %>"> -->
+<form class="new-song" action="/songs" method="post">
+  <input type="hidden" name="artist_id" value="<%= @artist.id %>">
 
   <label for="title">Title:</label>
   <input name="title">

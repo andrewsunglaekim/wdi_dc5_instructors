@@ -10,32 +10,68 @@ Delivery Tips:
 
 ## Learning Objectives
 
-* Utilize resourceful routes in a Rails application
-* Generate forms using `form_for` helpers in a Rails application
-* Explain the use of an authenticity token wrt Rails forms
+* Implement namespaced params in a form and explain the advantages
+* Use `strong_params` to limit what attributes can be modified
+* Generate forms for an AR model objet using `form_for` helpers
+* Explain the use of an authenticity token in Rails forms
+* Generate non-model forms using `form_tag`
 
 ## Outline
 
-**I do**
+### HTML Forms
 
-* Refactor Tunr artists to use helpers
-  * Resourceful routes first
-  * Show `rake routes`, path helpers for free!
-  * Refactor Views  
-    * New
-      * Make a form_for for new artists
-    * Edit
-      * It's the same form! Whoa!
-    * We are finally being truly RESTful
+#### Whip Around (8 minutes)
 
-**You do**
+Everyone write 5 facts about HTML forms (3 minutes). Go around the room until people can't
+give me any more.
 
-* Tackle songs
+5 minutes to share back / collect.
 
-### Extra things to cover
+### Namespaced Params
 
-* Whitelisting parameters
-* Delete method links
+** I DO **
+
+Demonstrate how we can modify the existing forms to namespace params. (Artists)
+
+Why do this?
+* Group related data (no conflicts)
+* Clean up our controller
+
+### Strong Params
+
+What's different about `Artist.update(params[:artist])`?
+We don't control which data gets passed in.
+
+Demonstrate adding a method `artist_params` to controller.
+
+** YOU DO **
+
+Update Songs to match.
+
+### form_for
+
+** I DO **
+
+There's starting to be a lot of duplication and 'boilerplate' in our form.
+Wouldn't it be nice if we could abstract that?
+
+Demonstrate porting artists to `form_for`.
+
+What's important here?
+
+** You do **
+Port songs to use form_for.
+
+### form_tag
+
+** I do **
+
+Demonstrate creating a form_tag for a search form.
+
+** You do **
+
+
+
 
 # Lesson Plan - Review Notes
 
