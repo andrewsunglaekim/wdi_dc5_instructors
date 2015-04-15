@@ -63,11 +63,6 @@ Delivery Tips:
     * Update
     * Destroy
 
-    ```
-    # song#show
-    <%= button_to 'Delete (button_to)', @song, method: :delete %>
-    <%= button_to 'Delete with Confirm', @song,  method: :delete, data: { confirm: 'Are you sure?' } %>
-    ```
 
 ## link_to
 
@@ -100,6 +95,11 @@ Delivery Tips:
 
 ** I do **
       * Delete thing
+      ```
+      # song#show
+      <%= button_to 'Delete (button_to)', @song, method: :delete %>
+      <%= button_to 'Delete with Confirm', @song,  method: :delete, data: { confirm: 'Are you sure?' } %>
+      ```
 
 ** You do **
     * Edit
