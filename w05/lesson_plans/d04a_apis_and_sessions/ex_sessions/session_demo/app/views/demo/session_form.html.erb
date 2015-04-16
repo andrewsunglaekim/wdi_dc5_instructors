@@ -1,0 +1,6 @@
+<h1>Set the Session</h1>
+
+<%= form_tag '/demo/set_session', method: :post do %>
+  Value to set: <%= text_field_tag :sess_value %>
+  <%= submit_tag "Set Session" %>
+<% end %>
