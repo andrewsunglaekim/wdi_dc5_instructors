@@ -60,6 +60,8 @@ Take the next 5 minutes to:
 - save it to an instance variable in the index, and have it display in the index view
 
 ### Break 10m
+## Reframing
+Devise is a gem in rails that we use in order to streamline user authentication. We're going to talk about how to get devise up and running and a couple of helper methods.
 
 ## Devise We do codealong (50m)
 - the first thing we should do is add the devise to the Gemfile and run a bundle install
