@@ -1,0 +1,2 @@
+class CircusesController < ApplicationController
+end
