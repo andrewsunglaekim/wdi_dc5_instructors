@@ -81,3 +81,8 @@ What if we wanted to let users 'favorite' gifs? Assume it's temporary, no models
 Sessions! Session can hold an array and we can append something to the array.
 Would we append the gif itself? NO! We almost never do something like that on the
 web, instead we store IDs (or the like.)
+
+
+## Exercise
+
+See ex_giphy_favs.md
