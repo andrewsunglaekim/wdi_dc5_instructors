@@ -5,6 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Circus.destroy_all
+
 Circus.create([
   {name: "Barnum and Bailey Circus", image_url: "http://upload.wikimedia.org/wikipedia/commons/8/8c/Barnum_%26_Bailey_clowns_and_geese2.jpg"},
   {name: "Gentry Brothers Circus", image_url: "http://upload.wikimedia.org/wikipedia/commons/5/52/Gentry_Bros._Circus_poster_featuring_Miss_Louise_Hilton,_1920-22.jpg"},

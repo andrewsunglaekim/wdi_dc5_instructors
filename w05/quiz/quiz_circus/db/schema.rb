@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20150416200356) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "circus", force: :cascade do |t|
+  create_table "circuses", force: :cascade do |t|
     t.string   "name"
     t.string   "image_url"
     t.datetime "created_at", null: false
