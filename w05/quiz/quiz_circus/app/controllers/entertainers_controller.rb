@@ -1,4 +1,4 @@
-class EntertainerController < ApplicationController
+class EntertainersController < ApplicationController
   def index
     @entertainers = Entertainer.all
   end
@@ -8,7 +8,7 @@ class EntertainerController < ApplicationController
   end
 
   def new
-    @entertainer = Entertainer.find(params[:id])
+    @entertainer = Entertainer.new
   end
 
   def create
@@ -40,4 +40,5 @@ class EntertainerController < ApplicationController
   private
   def entertainer_params
     params.require(:entertainer).permit(:name, :specialty)
+  end
 end

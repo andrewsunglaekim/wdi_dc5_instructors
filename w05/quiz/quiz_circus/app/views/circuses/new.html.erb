@@ -1,3 +1,15 @@
 <h1> New Circus </h1>
-
+<% if @circus.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@circus.errors.count, "error") %> prohibited
+        this circus from being saved:
+      </h2>
+      <ul>
+        <% @circus.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 <%= render 'form' %>
